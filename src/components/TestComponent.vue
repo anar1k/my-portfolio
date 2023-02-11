@@ -1,10 +1,12 @@
 <template>
-products
+  <div>about</div>
+  <div>about</div>
+  <div>about</div>
 </template>
 
 <script>
 export default {
-  name: "index"
+  name: 'TestComponent'
 }
 </script>
 
