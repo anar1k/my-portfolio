@@ -1,11 +1,11 @@
 <template>
-products
+<div>
+  products
+</div>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+
 </script>
 
 <style scoped>
