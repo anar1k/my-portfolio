@@ -1,11 +1,5 @@
 <template>
-  <Head>
-    <Title>about</Title>
-  </Head>
-
-<div>
-  about
-</div>
+  products
 </template>
 
 <script setup>
