@@ -24,24 +24,32 @@
       </NuxtLink>
     </div>
 
-    <button v-if="testRef" class="test" @click="testFun">
-      test
+    <button
+      class="test"
+      @click="testFun"
+    >
+      testeeeeeeeeeeeeeeeeeeeeeeeeeee
     </button>
 
-    <img src="@/assets/test-img.png" alt="photo">
+    <div>
+      <img
+        src="@/assets/test-img.png"
+        alt="photo"
+      >
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const testRef = ref<string | number>('')
+const testRef = ref<string | number>('');
 
 const testFun = ():string => {
-  console.log(testRef)
+  console.log(testRef);
 
-  return 'test'
-}
+  return 'test';
+};
 
-console.log(testFun())
+console.log(testFun());
 </script>
 
 <style scoped>

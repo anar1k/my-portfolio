@@ -7,5 +7,6 @@ export default defineNuxtConfig({
     ]
   },
 
-  srcDir: 'src/'
+  srcDir: 'src/',
+  ssr: process.env.NODE_ENV === 'production' /* TODO: убрать */
 })
