@@ -52,6 +52,6 @@ const testFun = ():string => {
 console.log(testFun());
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

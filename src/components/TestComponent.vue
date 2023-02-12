@@ -4,10 +4,8 @@
   <div>about</div>
 </template>
 
-<script>
-export default {
-  name: 'TestComponent'
-}
+<script setup>
+
 </script>
 
 <style scoped>

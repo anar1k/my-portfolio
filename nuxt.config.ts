@@ -1,4 +1,4 @@
-import eslintPlugin from 'vite-plugin-eslint'
+import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineNuxtConfig({
   vite: {
@@ -9,4 +9,4 @@ export default defineNuxtConfig({
 
   srcDir: 'src/',
   ssr: process.env.NODE_ENV === 'production' /* TODO: убрать */
-})
+});
