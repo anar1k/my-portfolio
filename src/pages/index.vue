@@ -41,6 +41,14 @@
 </template>
 
 <script setup lang="ts">
+import { useCounter } from '~/stores/counter';
+
+const counterStore = useCounter();
+
+counterStore.increment();
+
+console.log(counterStore.incrementedTimes);
+
 const testRef = ref<string | number>('');
 
 const testFun = ():string => {

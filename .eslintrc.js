@@ -39,6 +39,7 @@ module.exports = {
       tabWidth: 4
     }],
 
-    semi: ['error', 'always']
+    semi: ['error', 'always'],
+    'arrow-parens': ['error', 'always']
   }
 };

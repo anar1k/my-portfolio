@@ -8,5 +8,18 @@ export default defineNuxtConfig({
   },
 
   srcDir: 'src/',
-  ssr: process.env.NODE_ENV === 'production' /* TODO: убрать */
+  ssr: process.env.NODE_ENV === 'production' /* TODO: убрать */,
+
+  modules: [
+    // ...
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          'defineStore',
+          ['defineStore', 'definePiniaStore']
+        ]
+      }
+    ]
+  ]
 });
