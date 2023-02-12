@@ -1,47 +1,21 @@
 <template>
-  <div>
-    <header>
-      <NuxtLink to="/">
-        Nuxt home
-      </NuxtLink>
+  <v-app id="inspire">
+    <v-navigation-drawer v-model="drawer">
+      <!--  -->
+    </v-navigation-drawer>
 
-      <ul>
-        <li>
-          <NuxtLink to="/">
-            Home
-          </NuxtLink>
-        </li>
+    <v-app-bar>
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
 
-        <li>
-          <NuxtLink to="/about">
-            About
-          </NuxtLink>
-        </li>
+      <v-toolbar-title>Application</v-toolbar-title>
+    </v-app-bar>
 
-        <li>
-          <NuxtLink to="/products">
-            products
-          </NuxtLink>
-        </li>
-      </ul>
-    </header>
-
-    <div>
+    <v-main>
       <slot />
-    </div>
-  </div>
+    </v-main>
+  </v-app>
 </template>
 
-<style scoped>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #12b488;
-  gap: 20px;
-}
-
-.router-link-exact-active {
-  color: #12b488;
-}
-</style>
+<script setup lang="ts">
+const drawer = ref<boolean>(false);
+</script>
