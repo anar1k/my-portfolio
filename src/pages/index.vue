@@ -1,57 +1,19 @@
 <template>
-  <Head>
-    <Title>index</Title>
-  </Head>
-
-  <div>
-    <p>sadsads</p>
-
-    <div>test</div>
-
-    <div>
-      <NuxtLink to="/about">
-        about
-      </NuxtLink>
+  <v-parallax
+    src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+    height="100vh"
+  >
+    <div class="d-flex flex-column fill-height justify-center align-center text-white">
+      <h1 class="text-h4 font-weight-thin mb-4">
+        Vuetify
+      </h1>
+      <h4 class="subheading">
+        пиздец
+      </h4>
     </div>
-    <div>
-      <NuxtLink to="/products">
-        products
-      </NuxtLink>
-    </div>
-    <div>
-      <NuxtLink to="/products/1213">
-        products/1213
-      </NuxtLink>
-    </div>
-
-    <button
-      class="test"
-      @click="testFun"
-    >
-      testeeeeeeeeeeeeeeeeeeeeeeeeeee
-    </button>
-
-    <div>
-      <img
-        src="@/assets/test-img.png"
-        alt="photo"
-      >
-    </div>
-  </div>
+  </v-parallax>
 </template>
 
 <script setup lang="ts">
-const testRef = ref<string | number>('');
 
-const testFun = ():string => {
-  console.log(testRef);
-
-  return 'test';
-};
-
-console.log(testFun());
 </script>
-
-<style scoped>
-
-</style>

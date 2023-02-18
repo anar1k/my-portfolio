@@ -1,47 +1,25 @@
 <template>
-  <div>
-    <header>
-      <NuxtLink to="/">
-        Nuxt home
-      </NuxtLink>
+  <v-app id="inspire">
+    <header-default />
 
-      <ul>
-        <li>
-          <NuxtLink to="/">
-            Home
-          </NuxtLink>
-        </li>
-
-        <li>
-          <NuxtLink to="/about">
-            About
-          </NuxtLink>
-        </li>
-
-        <li>
-          <NuxtLink to="/products">
-            products
-          </NuxtLink>
-        </li>
-      </ul>
-    </header>
-
-    <div>
+    <v-main>
       <slot />
-    </div>
-  </div>
+    </v-main>
+
+    <footer-default />
+  </v-app>
 </template>
 
-<style scoped>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #12b488;
-  gap: 20px;
-}
+<script setup lang="ts">
+import { useChangeTheme } from '~/composables/useChangeTheme';
 
-.router-link-exact-active {
-  color: #12b488;
-}
+const { fetchTheme } = useChangeTheme();
+
+onMounted(() => {
+  fetchTheme();
+});
+</script>
+
+<style scoped lang="scss">
+
 </style>

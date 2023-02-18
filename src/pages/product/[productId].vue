@@ -23,13 +23,13 @@ const state = reactive<MyState>({
   control: 1,
   issue: undefined,
   test: 'sadas'
-})
+});
 
-const increment = ():number => state.control++
+const increment = ():number => state.control++;
 
 onMounted(() => {
-  console.log(123)
-})
+  console.log(123);
+});
 </script>
 
 <style scoped>
