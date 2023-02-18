@@ -8,7 +8,7 @@
         Vuetify
       </h1>
       <h4 class="subheading">
-        пиздец
+        приложение
       </h4>
     </div>
   </v-parallax>
