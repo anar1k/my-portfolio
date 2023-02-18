@@ -3,7 +3,9 @@
     <Title>about</Title>
   </Head>
 
-  <test-component />
+  <div>
+    dsadsdsadsadas
+  </div>
 </template>
 
 <script setup>
