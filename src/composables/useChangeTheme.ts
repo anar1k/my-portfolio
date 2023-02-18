@@ -1,6 +1,7 @@
 import { useTheme } from 'vuetify';
 import { storeToRefs } from 'pinia';
 import { useAppSettingsStore } from '~/stores/appSettings';
+import { Theme } from '~/types/Settings';
 
 export const useChangeTheme = () => {
   const settingsStore = useAppSettingsStore();
@@ -8,8 +9,8 @@ export const useChangeTheme = () => {
 
   const { theme } = storeToRefs(settingsStore);
 
-  const setTheme = (payload?: string) => {
-    let currentTheme:string;
+  const setTheme = (payload?: Theme) => {
+    let currentTheme:Theme;
 
     if (!payload) {
       currentTheme = theme.value === 'light' ? 'dark' : 'light';
@@ -22,12 +23,12 @@ export const useChangeTheme = () => {
   };
 
   const fetchTheme = () => {
-    const sessionTheme:string = JSON.parse(localStorage.getItem('app-settings')!)?.theme;
+    const sessionTheme:Theme = JSON.parse(localStorage.getItem('app-settings')!)?.theme;
 
     if (sessionTheme) {
       setTheme(sessionTheme);
     } else {
-      setTheme(globalTheme.global.name.value);
+      setTheme(theme.value);
     }
   };
 

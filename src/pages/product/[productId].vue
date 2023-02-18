@@ -28,7 +28,6 @@ const state = reactive<MyState>({
 const increment = ():number => state.control++;
 
 onMounted(() => {
-  console.log(123);
 });
 </script>
 
