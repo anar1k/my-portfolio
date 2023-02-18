@@ -7,9 +7,12 @@
     </v-toolbar-title>
 
     <template #append>
-      <NuxtLink to="/about">
+      <v-btn to="/about">
         about
-      </NuxtLink>
+        <!--        <NuxtLink to="/about">
+          about
+        </NuxtLink>-->
+      </v-btn>
 
       <NuxtLink to="/products">
         products
@@ -25,13 +28,13 @@
         vertical
       />
 
-      <button-change-theme />
+      <button-toggle-theme />
     </template>
   </v-app-bar>
 </template>
 
 <script setup lang="ts">
-import ButtonChangeTheme from '~/components/UI/ButtonChangeTheme.vue';
+import ButtonToggleTheme from '~/components/UI/ButtonToggleTheme.vue';
 </script>
 
 <style scoped lang="scss">

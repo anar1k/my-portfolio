@@ -1,19 +1,19 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { Theme } from '~/types/Settings';
+import { SettingsState } from '~/types/Settings';
 
 export const useAppSettingsStore = defineStore('app-settings', {
-  state: () => ({
-    theme: 'dark' as Theme
+  state: ():SettingsState => ({
+    theme: ''
   }),
 
   actions: {
-    setTheme (payload:Theme = 'light') {
+    setTheme (payload = 'light') {
       this.theme = payload;
     }
   },
 
   persist: {
-    storage: persistedState.sessionStorage
+    storage: persistedState.localStorage
   }
 });
 
