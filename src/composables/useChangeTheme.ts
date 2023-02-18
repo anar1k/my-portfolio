@@ -21,13 +21,15 @@ export const useChangeTheme = () => {
     settingsStore.setTheme(currentTheme);
   };
 
-  const sessionTheme:string = JSON.parse(localStorage.getItem('app-settings')!)?.theme;
+  const fetchTheme = () => {
+    const sessionTheme:string = JSON.parse(localStorage.getItem('app-settings')!)?.theme;
 
-  if (sessionTheme) {
-    setTheme(sessionTheme);
-  } else {
-    setTheme(globalTheme.global.name.value);
-  }
+    if (sessionTheme) {
+      setTheme(sessionTheme);
+    } else {
+      setTheme(globalTheme.global.name.value);
+    }
+  };
 
-  return { setTheme, theme };
+  return { setTheme, theme, fetchTheme };
 };

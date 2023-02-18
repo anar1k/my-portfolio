@@ -14,6 +14,8 @@
         </NuxtLink>-->
       </v-btn>
 
+      <a href="/products">test link</a>
+
       <NuxtLink to="/products">
         products
       </NuxtLink>

@@ -11,7 +11,13 @@
 </template>
 
 <script setup lang="ts">
+import { useChangeTheme } from '~/composables/useChangeTheme';
 
+const { fetchTheme } = useChangeTheme();
+
+onMounted(() => {
+  fetchTheme();
+});
 </script>
 
 <style scoped lang="scss">

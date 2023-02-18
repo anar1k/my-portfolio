@@ -18,7 +18,6 @@ export default defineNuxtConfig({
   },
 
   srcDir: 'src/',
-  ssr: false,
 
   modules: [
     '@pinia-plugin-persistedstate/nuxt',
