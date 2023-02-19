@@ -9,20 +9,15 @@
     <template #append>
       <v-btn to="/about">
         about
-        <!--        <NuxtLink to="/about">
-          about
-        </NuxtLink>-->
       </v-btn>
 
-      <a href="/products">test link</a>
-
-      <NuxtLink to="/products">
+      <v-btn to="/products">
         products
-      </NuxtLink>
+      </v-btn>
 
-      <NuxtLink to="/product/123">
-        product
-      </NuxtLink>
+      <v-btn to="/product/123">
+        product/123
+      </v-btn>
 
       <v-divider
         class="mx-3"
