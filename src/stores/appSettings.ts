@@ -1,19 +1,22 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { SettingsState, Theme } from '~/types/Settings';
+import { SettingsState } from '~/types/Settings';
 
-export const useAppSettingsStore = defineStore('app-settings', {
-  state: ():SettingsState => ({
-    theme: 'light'
-  }),
+export const useAppSettingsStore = defineStore('app-settings', () => {
+  const state = reactive<SettingsState>({
+    theme: ''
+  });
 
-  actions: {
-    setTheme (payload:Theme = 'light') {
-      this.theme = payload;
-    }
-  },
+  const setTheme = (payload = 'light') => {
+    state.theme = payload;
+  };
 
+  return { ...toRefs(state), setTheme };
+},
+{
   persist: {
-    storage: persistedState.localStorage
+    storage: persistedState.cookiesWithOptions({
+      sameSite: 'strict'
+    })
   }
 });
 

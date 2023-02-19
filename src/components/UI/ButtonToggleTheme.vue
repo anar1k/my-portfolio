@@ -1,14 +1,14 @@
 <template>
   <v-btn
-    icon
+    :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
     @click="setTheme()"
-  >
-    <v-icon>{{ theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
-  </v-btn>
+  />
 </template>
 
 <script setup lang="ts">
 import { useChangeTheme } from '~/composables/useChangeTheme';
 
-const { setTheme, theme } = useChangeTheme();
+const { setTheme } = useChangeTheme();
+
+const theme = computed(() => useChangeTheme().theme.value);
 </script>

@@ -1,9 +1,11 @@
 <template>
-  <v-app id="inspire">
+  <v-app>
+    <NuxtLoadingIndicator />
+
     <header-default />
 
     <v-main>
-      <slot />
+      <NuxtPage />
     </v-main>
 
     <footer-default />
@@ -12,12 +14,9 @@
 
 <script setup lang="ts">
 import { useChangeTheme } from '~/composables/useChangeTheme';
-
 const { fetchTheme } = useChangeTheme();
 
-onMounted(() => {
-  fetchTheme();
-});
+fetchTheme();
 </script>
 
 <style scoped lang="scss">

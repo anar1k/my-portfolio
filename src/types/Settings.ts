@@ -1,7 +1,5 @@
-type Theme = 'light' | 'dark'
-
 interface SettingsState {
-    theme: Theme
+    theme: string
 }
 
-export { Theme, SettingsState };
+export { SettingsState };
