@@ -13,8 +13,10 @@
 </template>
 
 <script setup lang="ts">
-import { useChangeTheme } from '~/composables/useChangeTheme';
-const { fetchTheme } = useChangeTheme();
+import { useAppSettingsStore } from '~/stores/appSettings';
+
+const appSettingsStore = useAppSettingsStore();
+const { fetchTheme } = appSettingsStore;
 
 fetchTheme();
 </script>

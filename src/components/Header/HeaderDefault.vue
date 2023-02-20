@@ -15,8 +15,8 @@
         products
       </v-btn>
 
-      <v-btn to="/product/123">
-        product/123
+      <v-btn to="/product/1">
+        product
       </v-btn>
 
       <v-divider
