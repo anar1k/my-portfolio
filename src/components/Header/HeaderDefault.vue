@@ -2,7 +2,7 @@
   <v-app-bar>
     <v-toolbar-title>
       <NuxtLink to="/">
-        AnarikDev
+        AAnar1k
       </NuxtLink>
     </v-toolbar-title>
 
@@ -13,10 +13,6 @@
 
       <v-btn to="/products">
         products
-      </v-btn>
-
-      <v-btn to="/product/1">
-        product
       </v-btn>
 
       <v-divider

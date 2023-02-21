@@ -18,13 +18,14 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  error: {
-    type: Object,
-    required: true
-  }
-});
+<script setup lang="ts">
+import { NuxtError } from '#app';
+
+ interface Props {
+  error: Partial<NuxtError>,
+}
+
+defineProps<Props>();
 
 const handleError = () => clearError({ redirect: '/' });
 </script>
