@@ -1,28 +1,9 @@
 <template>
-  <div>
-    <video
-      muted
-      autoplay
-      loop
-      preload="auto"
-      poster="/img/starry-sky.png"
-      style="position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-          "
-    >
-      <source
-        src="/video/starry-sky.mp4"
-        type="video/mp4"
-      >
-    </video>
-
-    <div
-      class="d-flex flex-column justify-center align-center text-white"
-      style="height: 100vh"
-    >
+  <v-parallax
+    src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+    height="100vh"
+  >
+    <div class="d-flex flex-column fill-height justify-center align-center text-white">
       <v-card class="bg-pink">
         <h1 class="text-h4 font-weight-thin mb-4">
           Vuetify
@@ -30,13 +11,12 @@
         <h4 class="subheading">
           приложение
         </h4>
-
         <v-btn to="/about">
           Начать знакомство
         </v-btn>
       </v-card>
     </div>
-  </div>
+  </v-parallax>
 </template>
 
 <script setup lang="ts">
