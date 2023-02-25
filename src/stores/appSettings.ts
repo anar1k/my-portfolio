@@ -6,7 +6,7 @@ import { SettingsState } from '~/types/Settings';
 export const useAppSettingsStore = defineStore('app-settings', () => {
   const globalTheme = useTheme();
 
-  const state = reactive<SettingsState>({
+  const state: SettingsState = reactive({
     theme: ''
   });
 

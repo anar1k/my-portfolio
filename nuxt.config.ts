@@ -3,6 +3,16 @@ import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in'
+    },
+
     head: {
       title: 'AAnarik Dev',
 
@@ -19,10 +29,6 @@ export default defineNuxtConfig({
 
   srcDir: 'src/',
 
-  dir: {
-    public: '../public'
-  },
-
   build: {
     transpile: ['vuetify']
   },
@@ -30,8 +36,10 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
-    '@/assets/styles/main.scss'
+    '@/assets/styles/app.scss'
   ],
+
+  ssr: false,
 
   vite: {
     plugins: [

@@ -1,5 +1,9 @@
 <template>
-  <div>product {{ productId }}</div>
+  <v-container>
+    <div>
+      product {{ productId }}
+    </div>
+  </v-container>
 </template>
 
 <script setup lang="ts">
@@ -7,7 +11,7 @@ interface RouteParams {
   productId?: string;
 }
 
-const { productId }:RouteParams = useRoute().params;
+const { productId }: RouteParams = useRoute().params;
 
 const uri = 'https://fakestoreapi.com/products/' + productId;
 const { data: product } = await useFetch(uri, { key: productId });
