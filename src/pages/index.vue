@@ -1,9 +1,29 @@
 <template>
-  <v-parallax
-    src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-    height="100vh"
-  >
-    <div class="d-flex flex-column fill-height justify-center align-center text-white">
+  <div>
+    <video
+      v-lazy-load
+      muted
+      autoplay
+      loop
+      preload="auto"
+      data-poster="/img/starry-sky.png"
+      style="position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+          "
+    >
+      <source
+        data-src="/video/starry-sky.mp4"
+        type="video/mp4"
+      >
+    </video>
+
+    <div
+      class="d-flex flex-column justify-center align-center text-white"
+      style="height: 100vh"
+    >
       <v-card class="bg-pink">
         <h1 class="text-h4 font-weight-thin mb-4">
           Vuetify
@@ -17,7 +37,7 @@
         </v-btn>
       </v-card>
     </div>
-  </v-parallax>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -25,3 +45,9 @@ definePageMeta({
   layout: 'index'
 });
 </script>
+
+<style lang="scss">
+html {
+  overflow: hidden;
+}
+</style>

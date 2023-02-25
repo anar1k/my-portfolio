@@ -58,7 +58,13 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    [
+      'nuxt3-lazy-load',
+      { directiveOnly: true }
+    ],
+
     '@pinia-plugin-persistedstate/nuxt',
+
     [
       '@pinia/nuxt',
       {
