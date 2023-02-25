@@ -40,8 +40,18 @@
 </template>
 
 <script setup lang="ts">
+import { useDisplay } from 'vuetify';
+
 definePageMeta({
   layout: 'index'
+});
+
+const display = useDisplay();
+
+const mobile = computed(() => display.mobile.value);
+
+watch(mobile, (newV, old) => {
+  console.log(newV, old);
 });
 </script>
 
