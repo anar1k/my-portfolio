@@ -1,26 +1,70 @@
 import eslintPlugin from 'vite-plugin-eslint';
+import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
-  css: [
-    'vuetify/lib/styles/main.sass',
-    '@/assets/styles/main.scss',
-    '@mdi/font/css/materialdesignicons.min.css'
-  ],
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in'
+    },
+
+    head: {
+      title: 'AAnarik Dev',
+
+      meta: [
+        { name: 'description', content: 'Все о Frontend-разработчике Анарике' }
+      ],
+
+      noscript: [
+        // <noscript>JavaScript is required</noscript>
+        { children: 'JavaScript is required' }
+      ]
+    }
+  },
+
+  srcDir: 'src/',
 
   build: {
     transpile: ['vuetify']
   },
 
+  css: [
+    'vuetify/lib/styles/main.sass',
+    '@mdi/font/css/materialdesignicons.min.css',
+    '@/assets/styles/app.scss'
+  ],
+
+  ssr: false,
+
   vite: {
     plugins: [
       eslintPlugin()
-    ]
+    ],
+
+    ssr: { noExternal: ['vuetify'] }
   },
 
-  srcDir: 'src/',
+  hooks: {
+    'vite:extendConfig': (config) => {
+      config.plugins!.push(
+        vuetify()
+      );
+    }
+  },
 
   modules: [
+    [
+      'nuxt3-lazy-load',
+      { directiveOnly: true }
+    ],
+
     '@pinia-plugin-persistedstate/nuxt',
+
     [
       '@pinia/nuxt',
       {

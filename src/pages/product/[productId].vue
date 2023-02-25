@@ -1,34 +1,24 @@
 <template>
-  <div>test 211212</div>
-
-  <div>
-    {{ state.count }}
-  </div>
-
-  <button @click="increment">
-    test
-  </button>
+  <v-container>
+    <div>
+      product {{ productId }}
+    </div>
+  </v-container>
 </template>
 
 <script setup lang="ts">
-type Test = undefined | string
-
-interface MyState<T = Test, E = string> {
-  control: number;
-  issue: T;
-  test: E;
+interface RouteParams {
+  productId?: string;
 }
 
-const state = reactive<MyState>({
-  control: 1,
-  issue: undefined,
-  test: 'sadas'
-});
+const { productId }: RouteParams = useRoute().params;
 
-const increment = ():number => state.control++;
+const uri = 'https://fakestoreapi.com/products/' + productId;
+const { data: product } = await useFetch(uri, { key: productId });
 
-onMounted(() => {
-});
+if (!product.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true });
+}
 </script>
 
 <style scoped>

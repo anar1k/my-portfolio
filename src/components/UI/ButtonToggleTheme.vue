@@ -6,9 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import { useChangeTheme } from '~/composables/useChangeTheme';
+import { useAppSettingsStore } from '~/stores/appSettings';
+const settingsStore = useAppSettingsStore();
 
-const { setTheme } = useChangeTheme();
+const { setTheme } = settingsStore;
 
-const theme = computed(() => useChangeTheme().theme.value);
+const theme = computed(() => settingsStore.theme);
 </script>

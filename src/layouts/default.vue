@@ -2,7 +2,7 @@
   <v-app>
     <NuxtLoadingIndicator />
 
-    <header-default />
+    <header-default @open-drawer="test" />
 
     <v-main>
       <NuxtPage />
@@ -13,12 +13,14 @@
 </template>
 
 <script setup lang="ts">
-import { useChangeTheme } from '~/composables/useChangeTheme';
-const { fetchTheme } = useChangeTheme();
+import { useAppSettingsStore } from '~/stores/appSettings';
+
+const appSettingsStore = useAppSettingsStore();
+const { fetchTheme } = appSettingsStore;
 
 fetchTheme();
+
+const test = () => {
+  console.log('123');
+};
 </script>
-
-<style scoped lang="scss">
-
-</style>
