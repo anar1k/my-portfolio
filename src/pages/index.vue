@@ -1,12 +1,11 @@
 <template>
   <div>
     <video
-      v-lazy-load
       muted
       autoplay
       loop
       preload="auto"
-      data-poster="/img/starry-sky.png"
+      poster="/img/starry-sky.png"
       style="position: fixed;
             right: 0;
             bottom: 0;
@@ -15,7 +14,7 @@
           "
     >
       <source
-        data-src="/video/starry-sky.mp4"
+        src="/video/starry-sky.mp4"
         type="video/mp4"
       >
     </video>
