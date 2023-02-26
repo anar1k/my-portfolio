@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 interface Props {
-  fixedBackground: boolean,
+  fixedBackground?: boolean,
   showWives?: boolean
 }
 
@@ -28,7 +28,7 @@ withDefaults(defineProps<Props>(), {
   width: 100vw;
   height: 100vh;
   background-size: 300% 300%;
-  background: radial-gradient(ellipse at bottom, rgba(195, 134, 252, 0.98) 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1f0e30fa 0%, #090A0F 100%);
 }
 
 @function multiple-box-shadow($number) {
@@ -56,7 +56,7 @@ withDefaults(defineProps<Props>(), {
 
 .animate-background__stars {
   background: transparent;
-  animation: animation-stars linear infinite;
+  animation: animation-stars linear infinite, scale-stars linear infinite;
 
   &:after {
     content: " ";
@@ -67,15 +67,15 @@ withDefaults(defineProps<Props>(), {
 }
 
 .animate-background__stars--small {
-  @include stars(1px, 1px, 700, 50s);
+  @include stars(1px, 1px, 700, 150s);
 }
 
 .animate-background__stars--medium {
-  @include stars(2px, 2px, 200, 100s);
+  @include stars(2px, 2px, 200, 200s);
 }
 
 .animate-background__stars--big {
-  @include stars(3px, 3px, 100, 150s);
+  @include stars(3px, 3px, 100, 250s);
 }
 
 @keyframes animation-stars {
@@ -85,6 +85,16 @@ withDefaults(defineProps<Props>(), {
 
   to {
     transform: translateY(2000px);
+  }
+}
+
+@keyframes scale-stars {
+  from {
+    transform: scale(1.0);
+  }
+
+  to {
+    transform: scale(3);
   }
 }
 </style>
