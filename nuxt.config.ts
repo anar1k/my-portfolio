@@ -39,8 +39,6 @@ export default defineNuxtConfig({
     '@/assets/styles/app.scss'
   ],
 
-  ssr: false,
-
   vite: {
     plugins: [
       eslintPlugin()
@@ -58,11 +56,6 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    [
-      'nuxt3-lazy-load',
-      { directiveOnly: true }
-    ],
-
     '@pinia-plugin-persistedstate/nuxt',
 
     [
