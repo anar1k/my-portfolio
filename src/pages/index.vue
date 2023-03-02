@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex flex-column fill-height justify-center align-center text-white">
-    <background-with-stars />
+    <main-background-with-stars />
 
-    <card-learn-more-about-me />
+    <main-card />
   </div>
 </template>
 
 <script setup lang="ts">
-import BackgroundWithStars from '~/components/UI/BackgroundWithStars.vue';
-import CardLearnMoreAboutMe from '~/components/Cards/CardLearnMoreAboutMe.vue';
+import MainBackgroundWithStars from '~/components/MainBackground/MainBackgroundWithStars.vue';
+import MainCard from '~/components/MainBlockCard/MainCard.vue';
 
 definePageMeta({
   layout: 'index'

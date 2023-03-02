@@ -14,6 +14,8 @@
 
 <script setup lang="ts">
 import { useAppSettingsStore } from '~/stores/appSettings';
+import HeaderDefault from '~/components/TheHeader/HeaderDefault.vue';
+import FooterDefault from '~/components/TheFooter/FooterDefault.vue';
 
 const appSettingsStore = useAppSettingsStore();
 const { fetchTheme } = appSettingsStore;
