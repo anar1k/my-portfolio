@@ -2,6 +2,8 @@ import eslintPlugin from 'vite-plugin-eslint';
 import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
+  ssr: false,
+
   app: {
     pageTransition: {
       name: 'page',

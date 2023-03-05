@@ -25,20 +25,18 @@ import { Contacts } from '~/types/Contacts';
 
 const btnSocials: Contacts = [
   {
-    icon: 'mdi-facebook',
-    href: ''
+    href: 'https://t.me/aanar1k',
+    icon: '$telegram'
   },
+
   {
-    icon: 'mdi-twitter',
-    href: ''
+    href: 'https://github.com/Anarik39',
+    icon: 'mdi-github'
   },
+
   {
-    icon: 'mdi-linkedin',
-    href: ''
-  },
-  {
-    icon: 'mdi-instagram',
-    href: 'https://www.instagram.com/'
+    href: 'mailto:aanar1k14@gmail.com',
+    icon: 'mdi-mail'
   }
 ];
 </script>
