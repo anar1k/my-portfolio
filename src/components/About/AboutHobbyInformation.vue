@@ -13,8 +13,27 @@
           v-for="(item, index) in listInfoYourself"
           :key="index"
           class="mb-1 text-body-1"
-          v-html="item"
-        />
+        >
+          <span>{{ item.text }}</span>
+
+          <template v-if="typeof item.icon === 'string'">
+            <v-icon
+              :icon="item.icon"
+              :color="item.colorForIcon"
+              class="ml-2"
+            />
+          </template>
+
+          <template v-else>
+            <v-icon
+              v-for="(icon, indexIcon) in item.icon"
+              :key="icon + indexIcon"
+              :icon="icon"
+              :color="item.colorForIcon"
+              class="ml-2"
+            />
+          </template>
+        </li>
       </ol>
     </v-col>
 
@@ -43,14 +62,39 @@
 
 <script setup lang="ts">
 import { Skills } from '~/types/Skills';
+import { InfoAboutYourSelf } from '~/types/InfoAboutYourSelf';
 
-const listInfoYourself: string[] = [
-  'Люблю поиграть в компьютерные игры 🎮👾️',
-  'Прохожу курсы английского языка (очно) 👨‍🎓',
-  'Открыт к диалогу, умею работать в команде 😇',
-  'Работоспособный, ответственный, целеустремленный, дотошный в работе (люблю все доводить до идеала) 💪',
-  'С самого начала пишу проекты на фреймворке <span class="text-green">Vue.js</span>',
-  'Не люблю проекты с <span class="text-brown">JQuery</span> и <span class="text-blue">React</span>'
+const listInfoYourself: InfoAboutYourSelf[] = [
+  {
+    text: 'Люблю поиграть в компьютерные игры',
+    icon: 'mdi-controller',
+    colorForIcon: 'deep-purple'
+  },
+  {
+    text: 'Прохожу курсы английского языка (очно)',
+    icon: 'mdi-translate',
+    colorForIcon: 'orange'
+  },
+  {
+    text: 'Открыт к диалогу, умею работать в команде',
+    icon: 'mdi-handshake',
+    colorForIcon: 'red'
+  },
+  {
+    text: 'Работоспособный, ответственный, целеустремленный, дотошный в работе (люблю все доводить до идеала)',
+    icon: 'mdi-account-details',
+    colorForIcon: 'cyan'
+  },
+  {
+    text: 'С самого начала пишу проекты на фреймворке Vue.js',
+    icon: 'mdi-vuejs',
+    colorForIcon: 'green'
+  },
+  {
+    text: 'Не люблю проекты с JQuery и React',
+    icon: ['mdi-jquery', 'mdi-react'],
+    colorForIcon: 'blue'
+  }
 ];
 
 const skills: Skills = [
