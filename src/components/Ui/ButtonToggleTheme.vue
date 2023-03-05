@@ -1,5 +1,6 @@
 <template>
   <v-btn
+    variant="text"
     :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
     @click="setTheme()"
   />
