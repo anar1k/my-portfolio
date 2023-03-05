@@ -51,8 +51,8 @@
 
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
-import ButtonToggleTheme from '~/components/UI/ButtonToggleTheme.vue';
 import HeaderNav from '~/components/TheHeader/HeaderNav.vue';
+import ButtonToggleTheme from '~/components/UI/ButtonToggleTheme.vue';
 
 const emit = defineEmits<{(e: 'open-drawer'): void}>();
 
