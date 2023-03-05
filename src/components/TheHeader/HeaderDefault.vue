@@ -19,43 +19,47 @@
 
         <v-spacer />
 
-        <v-btn
-          to="/about"
-          variant="text"
-        >
-          Обо мне
-        </v-btn>
+        <template v-if="isLoading && !mobile">
+          <header-nav />
 
-        <v-btn
-          to="/products"
-          variant="text"
-        >
-          Продукты
-        </v-btn>
-
-        <v-divider
-          class="mx-2"
-          inset
-          vertical
-        />
+          <v-divider
+            class="mx-2"
+            inset
+            vertical
+          />
+        </template>
 
         <button-toggle-theme variant="text" />
 
-        <v-app-bar-nav-icon
-          v-if="false"
-          @click="emit('open-drawer')"
-        >
-          <v-icon size="x-large">
-            mdi-menu
-          </v-icon>
-        </v-app-bar-nav-icon>
+        <template v-if="isLoading && mobile">
+          <v-divider
+            class="mx-2"
+            inset
+            vertical
+          />
+
+          <v-app-bar-nav-icon @click="emit('open-drawer')">
+            <v-icon size="x-large">
+              mdi-menu
+            </v-icon>
+          </v-app-bar-nav-icon>
+        </template>
       </nav>
     </v-container>
   </v-app-bar>
 </template>
 
 <script setup lang="ts">
+import { useDisplay } from 'vuetify';
 import ButtonToggleTheme from '~/components/UI/ButtonToggleTheme.vue';
+import HeaderNav from '~/components/TheHeader/HeaderNav.vue';
 
 const emit = defineEmits<{(e: 'open-drawer'): void}>();
+
+const { mobile } = useDisplay();
+const isLoading = ref<boolean>(false);
+
+onMounted(() => {
+  isLoading.value = true;
+});
 </script>

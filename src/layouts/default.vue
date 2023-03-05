@@ -2,7 +2,12 @@
   <v-app>
     <NuxtLoadingIndicator />
 
-    <header-default @open-drawer="test" />
+    <header-default @open-drawer="setDrawer" />
+
+    <header-mobile
+      v-model="showDrawer"
+      @update-value="setDrawer"
+    />
 
     <v-main>
       <NuxtPage />
@@ -15,6 +20,7 @@
 <script setup lang="ts">
 import { useAppSettingsStore } from '~/stores/appSettings';
 import HeaderDefault from '~/components/TheHeader/HeaderDefault.vue';
+import HeaderMobile from '~/components/TheHeader/HeaderMobile.vue';
 import FooterDefault from '~/components/TheFooter/FooterDefault.vue';
 
 const appSettingsStore = useAppSettingsStore();
@@ -22,7 +28,9 @@ const { fetchTheme } = appSettingsStore;
 
 fetchTheme();
 
-const test = () => {
-  console.log('123');
+const showDrawer = ref(false);
+
+const setDrawer = (value = !showDrawer.value): void => {
+  showDrawer.value = value;
 };
 </script>

@@ -1,5 +1,3 @@
-interface SettingsState {
+export interface SettingsState {
     theme: string
 }
-
-export { SettingsState };

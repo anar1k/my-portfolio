@@ -1,31 +1,35 @@
 <template>
   <v-card-text class="mt-2 text-amber flex-grow-0">
-    <v-btn
-      v-for="(item, index) in iconsSkills"
-      :key="item + index"
-      variant="text"
-      density="compact"
-      icon
-      class="justify-start px-md-4"
-    >
-      <v-icon :color="item.color">
-        {{ item.icon }}
-      </v-icon>
-
-      <v-tooltip
-        activator="parent"
-        location="bottom"
+    <div>
+      <v-btn
+        v-for="(item, index) in iconsSkills"
+        :key="item + index"
+        variant="text"
+        density="compact"
+        icon
+        :ripple="false"
+        class="justify-start"
       >
-        {{ item.text }}
-      </v-tooltip>
-    </v-btn>
+        <v-icon :color="item.color">
+          {{ item.icon }}
+        </v-icon>
+
+        <v-tooltip
+          activator="parent"
+          location="bottom"
+        >
+          {{ item.text }}
+        </v-tooltip>
+      </v-btn>
+    </div>
 
     <v-menu open-on-hover>
       <template #activator="{ props }">
         <div class="mt-2">
           <v-btn
-            class="px-0 px-md-4"
+            class="px-0"
             variant="plain"
+            :ripple="false"
             v-bind="props"
           >
             Связаться со мной
@@ -35,7 +39,7 @@
 
       <v-list>
         <v-tooltip
-          v-for="(item, index) in items"
+          v-for="(item, index) in contactsItems"
           :key="index"
           :text="item.textForTooltip"
           close-on-content-click
@@ -60,9 +64,10 @@
 </template>
 
 <script setup lang="ts">
-import { Skill } from '~/types/Skill';
+import { Skills } from '~/types/Skills';
+import { Contacts } from '~/types/Contacts';
 
-const iconsSkills: Skill[] = [
+const iconsSkills: Skills = [
   {
     icon: 'mdi-language-javascript',
     text: 'JavaScript',
@@ -100,7 +105,7 @@ const iconsSkills: Skill[] = [
   }
 ];
 
-const items = [
+const contactsItems: Contacts = [
   {
     title: 'Telegram',
     href: 'https://t.me/aanar1k',

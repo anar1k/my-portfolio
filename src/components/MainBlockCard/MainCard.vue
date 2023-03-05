@@ -33,6 +33,7 @@
 
       <v-img
         class="my-3 my-md-0 ml-md-10 order-first order-md-0 align-self-center"
+        lazy-src="/img/avatar.jpg"
         src="/img/avatar.jpg"
         width="250px"
       />
