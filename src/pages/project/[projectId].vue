@@ -1,20 +1,20 @@
 <template>
   <v-container>
     <div>
-      product {{ productId }}
+      project {{ projectId }}
     </div>
   </v-container>
 </template>
 
 <script setup lang="ts">
 interface RouteParams {
-  productId?: string;
+  projectId?: string;
 }
 
-const { productId }: RouteParams = useRoute().params;
+const { projectId }: RouteParams = useRoute().params;
 
-const uri = 'https://fakestoreapi.com/products/' + productId;
-const { data: product } = await useFetch(uri, { key: productId });
+const uri = 'https://fakestoreapi.com/products/' + projectId;
+const { data: product } = await useFetch(uri, { key: projectId });
 
 if (!product.value) {
   throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true });

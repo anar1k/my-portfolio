@@ -1,10 +1,10 @@
 <template>
-  <v-footer class="text-center d-flex flex-column">
+  <v-footer class="text-center d-flex flex-column flex-grow-0">
     <div>
       <v-btn
         v-for="btn in btnSocials"
         :key="btn.id"
-        :href="btn.link"
+        :href="btn.href"
         class="mx-4"
         :icon="btn.icon"
         target="_blank"
@@ -21,32 +21,24 @@
 </template>
 
 <script setup lang="ts">
-import { Social } from '~/types/Social';
+import { Contacts } from '~/types/Contacts';
 
-interface ButtonItem extends Social{
-  id: number
-}
-
-const btnSocials: ButtonItem[] = [
+const btnSocials: Contacts = [
   {
-    id: 1,
     icon: 'mdi-facebook',
-    link: ''
+    href: ''
   },
   {
-    id: 2,
     icon: 'mdi-twitter',
-    link: ''
+    href: ''
   },
   {
-    id: 3,
     icon: 'mdi-linkedin',
-    link: ''
+    href: ''
   },
   {
-    id: 4,
     icon: 'mdi-instagram',
-    link: 'https://www.instagram.com/'
+    href: 'https://www.instagram.com/'
   }
 ];
 </script>
