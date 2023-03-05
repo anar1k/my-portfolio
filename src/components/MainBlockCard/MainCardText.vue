@@ -114,7 +114,7 @@ const contactsItems: Contacts = [
   },
 
   {
-    title: 'Github',
+    title: 'GitHub',
     href: 'https://github.com/Anarik39',
     icon: 'mdi-github',
     textForTooltip: 'Anarik39'

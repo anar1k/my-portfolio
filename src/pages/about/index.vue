@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-4">
     <about-top-text class="pb-4 pb-xl-0" />
 
     <v-divider />
@@ -18,7 +18,7 @@
       >
         <v-btn
           prepend-icon="mdi-robot-happy-outline"
-          variant="outlined"
+          size="large"
           block
           to="/projects"
         >
