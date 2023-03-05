@@ -4,6 +4,7 @@
       v-for="(btn, index) in navItems"
       :key="btn.title + index"
       :to="btn.link"
+      class="mx-2"
       variant="text"
     >
       {{ btn.title }}
