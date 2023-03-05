@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="text-center d-flex flex-column">
+  <v-footer class="text-center d-flex flex-column flex-grow-0">
     <div>
       <v-btn
         v-for="btn in btnSocials"

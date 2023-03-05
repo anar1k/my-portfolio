@@ -1,38 +1,36 @@
 <template>
-  <v-container>
-    <v-row
-      align="center"
-      justify="center"
-    >
+  <div>
+    <about-top-text class="pb-4 pb-xl-0" />
+
+    <v-divider />
+
+    <about-first-experience class="py-4" />
+
+    <v-divider />
+
+    <about-hobby-information class="mt-4" />
+
+    <v-row justify="center">
       <v-col
-        :cols="4"
-        md="12"
+        cols="12"
+        xl="4"
+        md="6"
       >
-        <v-card>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, adipisci aliquam animi aperiam architec
-          to assumenda at consequatur corporis culpa cumque debitis dolorem doloremque dolorum ex fuga incidunt itaq
-          ue iu
-          re laborum necessitatibus nisi obcaecati odio optio placeat possimus provident quae qu
-          am quasi quia quidem quo ratione sit temporibus vero voluptatem voluptates voluptatum. Accusamus adipisci assu
-          menda aut, autem cupiditate deleniti dolore dolores dolorum ducimus eius in incidunt i
-          nventore iusto laboriosam laborum magnam magni maxime nihil, nostrum odit omnis perferendis placeat quae quib
-          u
-          sdam quidem quod repudiandae, sed soluta sunt voluptate. A adipisci aspernatur
-          consequatur culpa cum cumque delectus dolorum earum eos esse et eveniet facilis id illum impedit, in inventore
-          ipsam ipsum iure labore magni, maiores non nulla odit officiis omnis optio porro praese
-          ntium quas qui, ratione rerum soluta tempore totam unde veritatis vitae. Aliquid beatae corporis deserunt do
-          lor
-          e
-        </v-card>
+        <v-btn
+          prepend-icon="mdi-robot-happy-outline"
+          variant="outlined"
+          block
+          to="/projects"
+        >
+          Посмотреть проекты
+        </v-btn>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+import AboutTopText from '~/components/About/AboutTopText.vue';
+import AboutFirstExperience from '~/components/About/AboutFirstExperience.vue';
+import AboutHobbyInformation from '~/components/About/AboutHobbyInformation.vue';
 </script>
-
-<style scoped>
-
-</style>

@@ -1,6 +1,6 @@
 export interface Skill {
-    [name: string]: string,
-    icon: string
+    [name: string]: string | undefined,
+    icon?: string,
     text: string,
 }
 
