@@ -2,6 +2,12 @@ import eslintPlugin from 'vite-plugin-eslint';
 import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
+  typescript: {
+    strict: true
+  },
+
+  /* ssr: false, */
+
   app: {
     pageTransition: {
       name: 'page',
@@ -56,6 +62,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/content',
     '@pinia-plugin-persistedstate/nuxt',
 
     [

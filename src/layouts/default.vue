@@ -20,15 +20,14 @@
 </template>
 
 <script setup lang="ts">
-import { useAppSettingsStore } from '~/stores/appSettings';
 import HeaderDefault from '~/components/TheHeader/HeaderDefault.vue';
 import HeaderMobile from '~/components/TheHeader/HeaderMobile.vue';
 import FooterDefault from '~/components/TheFooter/FooterDefault.vue';
+import { useDefaultAppStore } from '~/stores/defaultApp';
 
-const appSettingsStore = useAppSettingsStore();
-const { fetchTheme } = appSettingsStore;
+const { fetchLayout } = useDefaultAppStore();
 
-fetchTheme();
+await fetchLayout();
 
 const showDrawer = ref(false);
 

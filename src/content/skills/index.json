@@ -1,0 +1,39 @@
+{
+  "basicSkills": [
+    {
+      "icon": "mdi-language-javascript",
+      "text": "JavaScript",
+      "color": "amber"
+    },
+    {
+      "icon": "mdi-language-typescript",
+      "text": "TypeScript",
+      "color": "blue-darken-1"
+    },
+    {
+      "icon": "mdi-vuejs",
+      "text": "Vuejs",
+      "color": "green"
+    },
+    {
+      "icon": "mdi-nuxt",
+      "text": "Nuxt",
+      "color": "green"
+    },
+    {
+      "icon": "mdi-api",
+      "text": "API",
+      "color": "white"
+    },
+    {
+      "icon": "mdi-git",
+      "text": "Git",
+      "color": "orange"
+    },
+    {
+      "icon": "mdi-sass",
+      "text": "Sass",
+      "color": "purple-lighten-3"
+    }
+  ]
+}

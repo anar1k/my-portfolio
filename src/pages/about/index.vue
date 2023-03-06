@@ -33,4 +33,6 @@
 import AboutTopText from '~/components/About/AboutTopText.vue';
 import AboutFirstExperience from '~/components/About/AboutFirstExperience.vue';
 import AboutHobbyInformation from '~/components/About/AboutHobbyInformation.vue';
+
+useHead({ title: 'Обо мне' });
 </script>

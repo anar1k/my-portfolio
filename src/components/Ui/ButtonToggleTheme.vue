@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import { useAppSettingsStore } from '~/stores/appSettings';
-const settingsStore = useAppSettingsStore();
+import { useThemeStore } from '~/stores/theme';
+const settingsStore = useThemeStore();
 
 const { setTheme } = settingsStore;
 

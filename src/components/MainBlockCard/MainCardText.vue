@@ -65,7 +65,7 @@
 
 <script setup lang="ts">
 import { Skills } from '~/types/Skills';
-import { Contacts } from '~/types/Contacts';
+import { useContactsStore } from '~/stores/contacts';
 
 const iconsSkills: Skills = [
   {
@@ -105,26 +105,5 @@ const iconsSkills: Skills = [
   }
 ];
 
-const contactsItems: Contacts = [
-  {
-    title: 'Telegram',
-    href: 'https://t.me/aanar1k',
-    icon: '$telegram',
-    textForTooltip: 'aanar1k'
-  },
-
-  {
-    title: 'GitHub',
-    href: 'https://github.com/Anarik39',
-    icon: 'mdi-github',
-    textForTooltip: 'Anarik39'
-  },
-
-  {
-    title: 'E-mail',
-    href: 'mailto:aanar1k14@gmail.com',
-    icon: 'mdi-mail',
-    textForTooltip: 'aanar1k14@gmail.com'
-  }
-];
+const contactsItems = computed(() => useContactsStore().contacts);
 </script>
