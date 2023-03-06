@@ -2,7 +2,7 @@
   <v-footer class="text-center d-flex flex-column flex-grow-0">
     <div>
       <v-btn
-        v-for="btn in btnSocials"
+        v-for="btn in btnContacts"
         :key="btn.id"
         :href="btn.href"
         class="mx-4"
@@ -21,22 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { Contacts } from '~/types/Contacts';
+import { useContactsStore } from '~/stores/contacts';
 
-const btnSocials: Contacts = [
-  {
-    href: 'https://t.me/aanar1k',
-    icon: '$telegram'
-  },
-
-  {
-    href: 'https://github.com/Anarik39',
-    icon: 'mdi-github'
-  },
-
-  {
-    href: 'mailto:aanar1k14@gmail.com',
-    icon: 'mdi-mail'
-  }
-];
+const btnContacts = computed(() => useContactsStore().contacts);
 </script>

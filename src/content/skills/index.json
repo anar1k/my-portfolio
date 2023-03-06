@@ -1,0 +1,118 @@
+{
+  "skills": [
+    {
+      "icon": "mdi-language-html5",
+      "text": "HTML",
+      "color": "red-darken-1"
+    },
+
+    {
+      "icon": "mdi-language-css3",
+      "text": "CSS",
+      "color": "blue-lighten-1"
+    },
+
+    {
+      "icon": "mdi-sass",
+      "text": "Sass",
+      "color": "purple-lighten-3",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-language-javascript",
+      "text": "JavaScript",
+      "color": "amber",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-language-typescript",
+      "text": "TypeScript",
+      "color": "blue-lighten-2",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-git",
+      "text": "Git",
+      "color": "orange",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-api",
+      "text": "API",
+      "color": "red",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-vuejs",
+      "text": "Vue.js",
+      "color": "green",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-nuxt",
+      "text": "Nuxt",
+      "color": "green",
+      "isMain": true
+    },
+
+    {
+      "icon": "mdi-vuetify",
+      "text": "Vuetify",
+      "color": "blue-darken-1"
+    },
+
+    {
+      "text": "Quasar",
+      "color": "blue-accent-1"
+    },
+
+    {
+      "text": "Element UI",
+      "color": "blue"
+    },
+
+    {
+      "text": "Vite",
+      "color": "deep-purple-lighten-2"
+    },
+
+    {
+      "icon": "mdi-webpack",
+      "text": "Webpack",
+      "color": "blue-darken-2"
+    },
+
+    {
+      "text": "Webstorm",
+      "color": "light-green-darken-1"
+    },
+
+    {
+      "icon": "mdi-microsoft-visual-studio-code",
+      "text": "VS Code",
+      "color": "blue-darken-3"
+    },
+
+    {
+      "text": "Figma",
+      "color": "purple"
+    },
+
+    {
+      "icon": "mdi-npm",
+      "text": "npm",
+      "color": "red"
+    },
+
+    {
+      "text": "Yarn",
+      "color": "blue-grey-lighten-1"
+    }
+  ]
+}

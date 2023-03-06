@@ -1,7 +1,6 @@
-export interface Contact {
-    [name: string]: string,
+export interface IContact {
     icon: string,
     href: string,
+    title?: string,
+    textForTooltip?: string,
 }
-
-export type Contacts = Contact[];

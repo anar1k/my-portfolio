@@ -20,15 +20,17 @@
 </template>
 
 <script setup lang="ts">
-import { useAppSettingsStore } from '~/stores/appSettings';
 import HeaderDefault from '~/components/TheHeader/HeaderDefault.vue';
 import HeaderMobile from '~/components/TheHeader/HeaderMobile.vue';
 import FooterDefault from '~/components/TheFooter/FooterDefault.vue';
+import { useThemeStore } from '~/stores/theme';
+import { useContactsStore } from '~/stores/contacts';
 
-const appSettingsStore = useAppSettingsStore();
-const { fetchTheme } = appSettingsStore;
+const { fetchTheme } = useThemeStore();
+const { fetchContacts } = useContactsStore();
 
-fetchTheme();
+await fetchContacts();
+await fetchTheme();
 
 const showDrawer = ref(false);
 

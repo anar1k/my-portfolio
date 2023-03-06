@@ -1,0 +1,45 @@
+{
+  "infoAboutYourSelf": [
+    {
+      "text": "Люблю поиграть в компьютерные игры",
+      "icon": "mdi-controller",
+      "colorForIcon": "deep-purple"
+    },
+
+    {
+      "text": "Прохожу курсы английского языка (очно)",
+      "icon": "mdi-translate",
+      "colorForIcon": "orange"
+    },
+
+    {
+      "text": "Открыт к диалогу, умею работать в команде",
+      "icon": "mdi-handshake",
+      "colorForIcon": "red"
+    },
+
+    {
+      "text": "Работоспособный, ответственный, целеустремленный, дотошный в работе (люблю все доводить до идеала)",
+      "icon": "mdi-account-details",
+      "colorForIcon": "cyan"
+    },
+
+    {
+      "text": "С самого начала пишу проекты на фреймворке Vue.js",
+      "icon": "mdi-vuejs",
+      "colorForIcon": "green"
+    },
+
+    {
+      "text": "Опыт разработки приложений Vue с нуля (SSR, SPA)",
+      "icon": "mdi-lightbulb-on-10",
+      "colorForIcon": "yellow"
+    },
+
+    {
+      "text": "Не люблю проекты с JQuery и React",
+      "icon": ["mdi-jquery", "mdi-react"],
+      "colorForIcon": "blue"
+    }
+  ]
+}

@@ -1,36 +1,33 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
 import { useTheme } from 'vuetify';
 import { useCookie } from '#app';
-import { SettingsState } from '~/types/Settings';
 
-export const useAppSettingsStore = defineStore('app-settings', () => {
+export const useThemeStore = defineStore('theme', () => {
   const globalTheme = useTheme();
 
-  const state: SettingsState = reactive({
-    theme: ''
-  });
+  const theme = ref<string>('');
 
   const setTheme = (payload:string) => {
     let currentTheme: string;
 
     if (!payload) {
-      currentTheme = state.theme === 'light' ? 'dark' : 'light';
+      currentTheme = theme.value === 'light' ? 'dark' : 'light';
     } else {
       currentTheme = payload;
     }
 
     globalTheme.global.name.value = currentTheme;
-    state.theme = currentTheme;
+    theme.value = currentTheme;
   };
 
   const fetchTheme = () => {
-    const appSettingsCookie = useCookie<SettingsState>('app-settings',
+    const appSettingsCookie = useCookie<{theme: string}>('app-settings',
       {
         default: () => ({ theme: globalTheme.global.name.value }),
         watch: false
       }).value;
 
-    const themeInCookie:string = appSettingsCookie?.theme;
+    const themeInCookie:string = appSettingsCookie.theme ?? '';
 
     if (themeInCookie) {
       setTheme(themeInCookie);
@@ -39,7 +36,7 @@ export const useAppSettingsStore = defineStore('app-settings', () => {
     }
   };
 
-  return { ...toRefs(state), setTheme, fetchTheme };
+  return { theme, setTheme, fetchTheme };
 },
 {
   persist: {
@@ -50,5 +47,5 @@ export const useAppSettingsStore = defineStore('app-settings', () => {
 });
 
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useAppSettingsStore, import.meta.hot));
+  import.meta.hot.accept(acceptHMRUpdate(useThemeStore, import.meta.hot));
 }

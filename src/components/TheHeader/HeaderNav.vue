@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { Links } from '~/types/Link';
+import { ILink } from '~/types/Link';
 
 interface Props {
   isList?: boolean,
@@ -36,7 +36,7 @@ withDefaults(defineProps<Props>(), {
   isList: false
 });
 
-const navItems: Links = [
+const navItems: ILink[] = [
   {
     title: 'Обо мне',
     link: '/about'
