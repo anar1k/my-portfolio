@@ -33,6 +33,14 @@
 import AboutTopText from '~/components/About/AboutTopText.vue';
 import AboutFirstExperience from '~/components/About/AboutFirstExperience.vue';
 import AboutHobbyInformation from '~/components/About/AboutHobbyInformation.vue';
+import { useSkillsStore } from '~/stores/skills';
+import { useInfoMeStore } from '~/stores/infoMe';
 
 useHead({ title: 'Обо мне' });
+
+const { fetchSkills } = useSkillsStore();
+const { fetchInfoMe } = useInfoMeStore();
+
+await fetchInfoMe();
+await fetchSkills();
 </script>

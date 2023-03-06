@@ -1,6 +1,4 @@
-export interface Link {
+export interface ILink {
     link: string,
     title: string
 }
-
-export type Links = Link[];

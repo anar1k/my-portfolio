@@ -23,11 +23,14 @@
 import HeaderDefault from '~/components/TheHeader/HeaderDefault.vue';
 import HeaderMobile from '~/components/TheHeader/HeaderMobile.vue';
 import FooterDefault from '~/components/TheFooter/FooterDefault.vue';
-import { useDefaultAppStore } from '~/stores/defaultApp';
+import { useThemeStore } from '~/stores/theme';
+import { useContactsStore } from '~/stores/contacts';
 
-const { fetchLayout } = useDefaultAppStore();
+const { fetchTheme } = useThemeStore();
+const { fetchContacts } = useContactsStore();
 
-await fetchLayout();
+await fetchContacts();
+await fetchTheme();
 
 const showDrawer = ref(false);
 

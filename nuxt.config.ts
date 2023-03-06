@@ -6,8 +6,6 @@ export default defineNuxtConfig({
     strict: true
   },
 
-  /* ssr: false, */
-
   app: {
     pageTransition: {
       name: 'page',

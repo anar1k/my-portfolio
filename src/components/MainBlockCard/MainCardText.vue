@@ -2,7 +2,7 @@
   <v-card-text class="mt-2 text-amber flex-grow-0">
     <div>
       <v-btn
-        v-for="(item, index) in iconsSkills"
+        v-for="(item, index) in skills"
         :key="item + index"
         variant="text"
         density="compact"
@@ -64,46 +64,9 @@
 </template>
 
 <script setup lang="ts">
-import { Skills } from '~/types/Skills';
 import { useContactsStore } from '~/stores/contacts';
+import { useSkillsStore } from '~/stores/skills';
 
-const iconsSkills: Skills = [
-  {
-    icon: 'mdi-language-javascript',
-    text: 'JavaScript',
-    color: 'amber'
-  },
-  {
-    icon: 'mdi-language-typescript',
-    text: 'TypeScript',
-    color: 'blue-darken-1'
-  },
-  {
-    icon: 'mdi-vuejs',
-    text: 'Vuejs',
-    color: 'green'
-  },
-  {
-    icon: 'mdi-nuxt',
-    text: 'Nuxt',
-    color: 'green'
-  },
-  {
-    icon: 'mdi-api',
-    text: 'API',
-    color: 'white'
-  },
-  {
-    icon: 'mdi-git',
-    text: 'Git',
-    color: 'orange'
-  },
-  {
-    icon: 'mdi-sass',
-    text: 'Sass',
-    color: 'purple-lighten-3'
-  }
-];
-
+const skills = computed(() => useSkillsStore().mainSkills.reverse());
 const contactsItems = computed(() => useContactsStore().contacts);
 </script>

@@ -1,7 +1,6 @@
-export interface Skill {
-    [name: string]: string | undefined,
-    icon?: string,
+export interface ISkill {
     text: string,
+    color?: string,
+    icon?: string,
+    isMain?: boolean
 }
-
-export type Skills = Skill[];

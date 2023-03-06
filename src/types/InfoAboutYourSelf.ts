@@ -3,3 +3,9 @@ export interface InfoAboutYourSelf {
     icon?: string | string[],
     colorForIcon?: string
 }
+
+export interface IInfoAboutYourSelf {
+    text: string,
+    icon?: string | string[],
+    colorForIcon?: string
+}
