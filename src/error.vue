@@ -13,7 +13,6 @@
         </div>
 
         <v-btn
-          color="secondary"
           class="mt-4"
           @click="handleError"
         >
