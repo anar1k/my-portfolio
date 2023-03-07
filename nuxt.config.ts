@@ -76,6 +76,6 @@ export default defineNuxtConfig({
   ],
 
   image: {
-    domains: ['quiet-begonia-12f850.netlify.app']
+    provider: 'netlify'
   }
 });
