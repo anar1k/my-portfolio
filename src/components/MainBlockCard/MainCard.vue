@@ -31,9 +31,7 @@
         </v-card-actions>
       </div>
 
-      <nuxt-img
-        preload
-        quality="100"
+      <v-img
         src="/img/avatar.jpg"
         class="my-3 my-md-0 ml-md-10 order-first order-md-0 align-self-center"
         width="250px"
