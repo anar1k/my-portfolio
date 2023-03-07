@@ -8,7 +8,11 @@
       cols="12"
       md="4"
     >
-      <v-img src="/img/groot.png" />
+      <nuxt-img
+        class="w-100"
+        quality="80"
+        src="/img/groot.png"
+      />
     </v-col>
 
     <v-col

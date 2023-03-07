@@ -1,6 +1,6 @@
 <template>
   <div class="pb-4">
-    <about-top-text class="pb-4 pb-xl-0" />
+    <about-welcome class="pb-4 pb-xl-0" />
 
     <v-divider />
 
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import AboutTopText from '~/components/About/AboutTopText.vue';
+import AboutWelcome from '~/components/About/AboutWelcome.vue';
 import AboutFirstExperience from '~/components/About/AboutFirstExperience.vue';
 import AboutHobbyInformation from '~/components/About/AboutHobbyInformation.vue';
 import { useSkillsStore } from '~/stores/skills';

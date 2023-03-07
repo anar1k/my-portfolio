@@ -60,6 +60,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/image-edge',
     '@nuxt/content',
     '@pinia-plugin-persistedstate/nuxt',
 
