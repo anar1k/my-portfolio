@@ -60,7 +60,6 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxt/image-edge',
     '@nuxt/content',
     '@pinia-plugin-persistedstate/nuxt',
 
@@ -73,9 +72,5 @@ export default defineNuxtConfig({
         ]
       }
     ]
-  ],
-
-  image: {
-    provider: 'netlify'
-  }
+  ]
 });

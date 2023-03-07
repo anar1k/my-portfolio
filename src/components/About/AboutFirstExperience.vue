@@ -19,9 +19,8 @@
       cols="12"
       md="4"
     >
-      <nuxt-img
-        class="rounded-lg w-100"
-        quality="80"
+      <v-img
+        class="rounded-lg"
         src="/img/thor.jpg"
       />
     </v-col>
