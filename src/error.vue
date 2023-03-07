@@ -1,27 +1,34 @@
 <template>
-  <div class="mt-7 max-w-sm mx-auto text-center card">
-    <p class="mt-7 text-7xl font-bold">
-      {{ error.statusCode }}
-    </p>
-    <p class="mt-7 text-6xl">
-      Ooops.
-    </p>
-    <p class="mt-7">
-      {{ error.message }}
-    </p>
-    <button
-      class="btn my-7"
-      @click="handleError"
-    >
-      Go Home...
-    </button>
-  </div>
+  <v-app class="error-page">
+    <v-main class="error-page__content d-flex flex-column align-center bg-black">
+      <svg-rocket-with-stars />
+
+      <div class="error-page__text text-center">
+        <div class="text-h4 font-weight-bold">
+          {{ error.statusCode }} Ошибка
+        </div>
+
+        <div class="text-h4">
+          Ты потерялся в пространстве :(
+        </div>
+
+        <v-btn
+          color="secondary"
+          class="mt-4"
+          @click="handleError"
+        >
+          Давай отвезем тебя обратно
+        </v-btn>
+      </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script setup lang="ts">
 import { NuxtError } from '#app';
+import SvgRocketWithStars from '~/components/Svg/SvgRocketWithStars.vue';
 
- interface Props {
+interface Props {
   error: Partial<NuxtError>,
 }
 
@@ -29,3 +36,24 @@ defineProps<Props>();
 
 const handleError = () => clearError({ redirect: '/' });
 </script>
+
+<style scoped lang="scss">
+.error-page__content{
+  height: 100vh;
+}
+
+.error-page__text{
+  opacity: 0;
+  animation: appear 1s ease-in forwards;
+  animation-delay: 1.3s;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+</style>

@@ -1,13 +1,13 @@
 <template>
   <div class="d-flex fill-height justify-center align-center">
-    <main-background-with-stars />
+    <background-with-stars />
 
     <main-card />
   </div>
 </template>
 
 <script setup lang="ts">
-import MainBackgroundWithStars from '~/components/MainBackground/MainBackgroundWithStars.vue';
+import BackgroundWithStars from '~/components/Backgrounds/BackgroundWithStars.vue';
 import MainCard from '~/components/MainBlockCard/MainCard.vue';
 import { useSkillsStore } from '~/stores/skills';
 import { useContactsStore } from '~/stores/contacts';
