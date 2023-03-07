@@ -2,10 +2,10 @@
   <v-card
     color="#512DA8"
     theme="dark"
-    class="py-4 py-md-0"
+    class="py-2 py-md-0"
   >
-    <div class="d-flex justify-space-between flex-column flex-md-row">
-      <div class="d-flex justify-center flex-column py-md-4">
+    <div class="d-flex flex-column flex-md-row">
+      <div class="py-md-4">
         <v-card-title class="text-h5 text-md-h3 mt-md-4">
           Frontend-разработчик
         </v-card-title>
@@ -31,10 +31,11 @@
         </v-card-actions>
       </div>
 
-      <v-img
-        class="my-3 my-md-0 ml-md-10 order-first order-md-0 align-self-center"
-        lazy-src="/img/avatar.jpg"
+      <nuxt-img
+        preload
+        quality="100"
         src="/img/avatar.jpg"
+        class="my-3 my-md-0 ml-md-10 order-first order-md-0 align-self-center"
         width="250px"
       />
     </div>

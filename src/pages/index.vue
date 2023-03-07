@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column fill-height justify-center align-center text-white">
+  <div class="d-flex fill-height justify-center align-center">
     <main-background-with-stars />
 
     <main-card />

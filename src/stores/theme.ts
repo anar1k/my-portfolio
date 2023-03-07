@@ -21,7 +21,7 @@ export const useThemeStore = defineStore('theme', () => {
   };
 
   const fetchTheme = () => {
-    const appSettingsCookie = useCookie<{theme: string}>('app-settings',
+    const appSettingsCookie = useCookie<{theme: string}>('theme',
       {
         default: () => ({ theme: globalTheme.global.name.value }),
         watch: false
