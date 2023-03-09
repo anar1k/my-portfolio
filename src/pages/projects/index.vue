@@ -2,7 +2,7 @@
   <div>
     <ui-breadcrumbs :items="itemsForBreadcrumbs" />
 
-    <div class="text-h4 text-md-h3 my-4 text-amber">
+    <div class="text-h4 text-md-h3 my-4 text-primary">
       Мои проекты
     </div>
 

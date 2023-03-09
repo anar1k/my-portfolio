@@ -20,7 +20,7 @@
       cols="12"
       md="8"
     >
-      <div class="text-h4 text-md-h3 mb-4 text-amber">
+      <div class="text-h4 text-md-h3 mb-4 text-primary">
         Добро пожаловать!
       </div>
 

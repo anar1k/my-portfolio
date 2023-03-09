@@ -9,7 +9,7 @@
       :src="cardItem.img"
     />
 
-    <v-card-title class="text-md-h5 pt-4 text-amber">
+    <v-card-title class="text-md-h5 pt-4 text-primary">
       {{ cardItem.title }}
     </v-card-title>
 

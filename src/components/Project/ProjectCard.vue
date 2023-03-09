@@ -2,7 +2,7 @@
   <div class="project text-center">
     <div
       v-if="projectItem.title"
-      class="text-h4 text-md-h3 mb-4 text-amber"
+      class="text-h4 text-md-h3 mb-4 text-primary"
     >
       Проект «{{ projectItem.title }}»
     </div>
