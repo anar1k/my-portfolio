@@ -12,6 +12,7 @@
               src="/img/logo.webp"
               width="30px"
               class="mr-2"
+              alt="logo"
             />
 
             <span>AAnar1k</span>
@@ -39,7 +40,10 @@
             vertical
           />
 
-          <v-app-bar-nav-icon @click="emit('open-drawer')">
+          <v-app-bar-nav-icon
+            aria-label="open menu"
+            @click="emit('open-drawer')"
+          >
             <v-icon size="x-large">
               mdi-menu
             </v-icon>
