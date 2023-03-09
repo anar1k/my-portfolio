@@ -10,8 +10,8 @@
 
       <ol class="hobby-information__list">
         <li
-          v-for="(item, index) in listInfoYourself"
-          :key="index"
+          v-for="item in listInfoYourself"
+          :key="item.id"
           class="mb-1 text-body-1"
         >
           <span>{{ item.text }}</span>
@@ -47,8 +47,8 @@
 
       <div>
         <v-chip
-          v-for="(item, index) in skills"
-          :key="item.text + index"
+          v-for="item in skills"
+          :key="item.id"
           class="ma-2 ml-0"
           :color="item.color"
           :prepend-icon="item.icon"

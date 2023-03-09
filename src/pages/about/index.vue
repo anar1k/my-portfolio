@@ -17,12 +17,13 @@
         md="6"
       >
         <v-btn
-          prepend-icon="mdi-robot-happy-outline"
           size="large"
           block
-          to="/projects"
+          prepend-icon="mdi-download"
+          href="/files/resume.pdf"
+          download
         >
-          Посмотреть проекты
+          Скачать резюме
         </v-btn>
       </v-col>
     </v-row>

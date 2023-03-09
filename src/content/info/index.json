@@ -3,43 +3,50 @@
     {
       "text": "Люблю поиграть в компьютерные игры",
       "icon": "mdi-controller",
-      "colorForIcon": "deep-purple"
+      "colorForIcon": "deep-purple",
+      "id": 1
     },
 
     {
       "text": "Прохожу курсы английского языка (очно)",
       "icon": "mdi-translate",
-      "colorForIcon": "orange"
+      "colorForIcon": "orange",
+      "id": 2
     },
 
     {
       "text": "Открыт к диалогу, умею работать в команде",
       "icon": "mdi-handshake",
-      "colorForIcon": "red"
+      "colorForIcon": "red",
+      "id": 3
     },
 
     {
       "text": "Работоспособный, ответственный, целеустремленный, дотошный в работе (люблю все доводить до идеала)",
       "icon": "mdi-account-details",
-      "colorForIcon": "cyan"
+      "colorForIcon": "cyan",
+      "id": 4
     },
 
     {
       "text": "С самого начала пишу проекты на фреймворке Vue.js",
       "icon": "mdi-vuejs",
-      "colorForIcon": "green"
+      "colorForIcon": "green",
+      "id": 5
     },
 
     {
       "text": "Опыт разработки приложений Vue с нуля (SSR, SPA)",
       "icon": "mdi-lightbulb-on-10",
-      "colorForIcon": "yellow"
+      "colorForIcon": "yellow",
+      "id": 6
     },
 
     {
       "text": "Не люблю проекты с JQuery и React",
       "icon": ["mdi-jquery", "mdi-react"],
-      "colorForIcon": "blue"
+      "colorForIcon": "blue",
+      "id": 7
     }
   ]
 }

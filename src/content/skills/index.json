@@ -1,25 +1,29 @@
 {
   "skills": [
     {
+      "id": 1,
       "icon": "mdi-language-html5",
       "text": "HTML",
       "color": "red-darken-1"
     },
 
     {
+      "id": 2,
       "icon": "mdi-language-css3",
       "text": "CSS",
       "color": "blue-lighten-1"
     },
 
     {
+      "id": 3,
       "icon": "mdi-sass",
-      "text": "Sass",
+      "text": "Scss",
       "color": "purple-lighten-3",
       "isMain": true
     },
 
     {
+      "id": 4,
       "icon": "mdi-language-javascript",
       "text": "JavaScript",
       "color": "amber",
@@ -27,6 +31,7 @@
     },
 
     {
+      "id": 5,
       "icon": "mdi-language-typescript",
       "text": "TypeScript",
       "color": "blue-lighten-2",
@@ -34,6 +39,7 @@
     },
 
     {
+      "id": 6,
       "icon": "mdi-git",
       "text": "Git",
       "color": "orange",
@@ -41,6 +47,7 @@
     },
 
     {
+      "id": 7,
       "icon": "mdi-api",
       "text": "API",
       "color": "red",
@@ -48,69 +55,106 @@
     },
 
     {
+      "id": 8,
       "icon": "mdi-vuejs",
-      "text": "Vue.js",
+      "text": "Vue.js (2/3)",
       "color": "green",
       "isMain": true
     },
 
     {
+      "id": 9,
       "icon": "mdi-nuxt",
-      "text": "Nuxt",
+      "text": "Nuxt 3",
       "color": "green",
       "isMain": true
     },
 
     {
+      "id": 11,
+      "text": "Vuex",
+      "color": "green"
+    },
+
+    {
+      "id": 12,
+      "icon": "mdi-fruit-pineapple",
+      "text": "Pinia",
+      "color": "orange"
+    },
+
+    {
+      "id": 13,
+      "text": "Vue-router",
+      "color": "green"
+    },
+
+    {
+      "id": 14,
       "icon": "mdi-vuetify",
       "text": "Vuetify",
       "color": "blue-darken-1"
     },
 
     {
+      "id": 15,
       "text": "Quasar",
       "color": "blue-accent-1"
     },
 
     {
+      "id": 16,
       "text": "Element UI",
       "color": "blue"
     },
 
     {
+      "id": 17,
+      "text": "Gsap",
+      "color": "green"
+    },
+
+    {
+      "id": 18,
       "text": "Vite",
       "color": "deep-purple-lighten-2"
     },
 
     {
+      "id": 19,
       "icon": "mdi-webpack",
       "text": "Webpack",
       "color": "blue-darken-2"
     },
 
     {
+      "id": 20,
       "text": "Webstorm",
       "color": "light-green-darken-1"
     },
 
     {
+      "id": 21,
       "icon": "mdi-microsoft-visual-studio-code",
       "text": "VS Code",
       "color": "blue-darken-3"
     },
 
     {
+      "id": 22,
       "text": "Figma",
       "color": "purple"
     },
 
     {
+      "id": 23,
       "icon": "mdi-npm",
       "text": "npm",
       "color": "red"
     },
 
     {
+      "id": 24,
       "text": "Yarn",
       "color": "blue-grey-lighten-1"
     }

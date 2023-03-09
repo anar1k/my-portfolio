@@ -12,6 +12,7 @@
               src="/img/logo.webp"
               width="30px"
               class="mr-2"
+              alt="logo"
             />
 
             <span>AAnar1k</span>
@@ -30,7 +31,7 @@
           />
         </template>
 
-        <button-toggle-theme />
+        <ui-button-toggle-theme />
 
         <template v-if="isLoading && mobile">
           <v-divider
@@ -39,7 +40,10 @@
             vertical
           />
 
-          <v-app-bar-nav-icon @click="emit('open-drawer')">
+          <v-app-bar-nav-icon
+            aria-label="open menu"
+            @click="emit('open-drawer')"
+          >
             <v-icon size="x-large">
               mdi-menu
             </v-icon>
@@ -53,7 +57,7 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
 import HeaderNav from '~/components/TheHeader/HeaderNav.vue';
-import ButtonToggleTheme from '~/components/Ui/ButtonToggleTheme.vue';
+import UiButtonToggleTheme from '~/components/Ui/UiButtonToggleTheme.vue';
 
 const emit = defineEmits<{(e: 'open-drawer'): void}>();
 

@@ -1,0 +1,186 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "img": "/img/projects/techno-shkola.webp",
+      "title": "Techno shkola",
+      "shortlyText": "Компания Техно Школа - оснащение учебных заведений и офисов интерактивным оборудованием.",
+      "link": "https://techno-shkola.ru/",
+      "skills": [
+        {
+          "id": 1,
+          "icon": "mdi-language-javascript",
+          "text": "JavaScript",
+          "color": "amber"
+        },
+        {
+          "id": 2,
+          "icon": "mdi-vuejs",
+          "text": "Vue.js 3",
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "text": "Vuex",
+          "color": "green"
+        },
+        {
+          "id": 4,
+          "text": "Vue-router",
+          "color": "green"
+        },
+        {
+          "id": 5,
+          "text": "Gsap",
+          "color": "green"
+        },
+        {
+          "id": 6,
+          "text": "Quasar",
+          "color": "blue-accent-1"
+        },
+        {
+          "id": 7,
+          "icon": "mdi-sass",
+          "text": "Scss",
+          "color": "purple-lighten-3"
+        },
+        {
+          "id": 8,
+          "icon": "mdi-webpack",
+          "text": "Webpack",
+          "color": "blue-darken-2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "/img/projects/goojox.webp",
+      "title": "Goojox",
+      "shortlyText": "Маркетплейс Goojox – это место встречи продавцов и покупателей с удобным сервисом и прозрачной оплатой.",
+      "link": "https://seller.goojox.ru/",
+      "skills": [
+        {
+          "id": 1,
+          "icon": "mdi-language-javascript",
+          "text": "JavaScript",
+          "color": "amber"
+        },
+        {
+          "id": 2,
+          "text": "Gsap",
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "icon": "mdi-sass",
+          "text": "Scss",
+          "color": "purple-lighten-3"
+        },
+        {
+          "id": 4,
+          "icon": "mdi-webpack",
+          "text": "Webpack",
+          "color": "blue-darken-2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "/img/projects/eazydeal.webp",
+      "title": "Eazydeal",
+      "shortlyText": "Российский интернет-сервис для размещения объявлений о строй товарах.",
+      "link": "https://eazydeal.ru/",
+      "skills": [
+        {
+          "id": 1,
+          "icon": "mdi-language-javascript",
+          "text": "JavaScript",
+          "color": "amber"
+        },
+        {
+          "id": 2,
+          "icon": "mdi-vuejs",
+          "text": "Vue.js 2",
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "text": "Vuex",
+          "color": "green"
+        },
+        {
+          "id": 4,
+          "text": "Vue-router",
+          "color": "green"
+        },
+        {
+          "id": 5,
+          "text": "Quasar",
+          "color": "blue-accent-1"
+        },
+        {
+          "id": 6,
+          "icon": "mdi-sass",
+          "text": "Scss",
+          "color": "purple-lighten-3"
+        },
+        {
+          "id": 7,
+          "icon": "mdi-webpack",
+          "text": "Webpack",
+          "color": "blue-darken-2"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "/img/projects/my-app.webp",
+      "title": "AAnarik Dev",
+      "shortlyText": "Самое классное портфолио из всех!",
+      "skills": [
+        {
+          "id": 1,
+          "icon": "mdi-language-typescript",
+          "text": "TypeScript",
+          "color": "blue-lighten-2"
+        },
+        {
+          "id": 2,
+          "icon": "mdi-vuejs",
+          "text": "Vue.js 3",
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "icon": "mdi-fruit-pineapple",
+          "text": "Pinia",
+          "color": "orange"
+        },
+        {
+          "id": 4,
+          "icon": "mdi-nuxt",
+          "text": "Nuxt 3",
+          "color": "green"
+        },
+        {
+          "id": 5,
+          "icon": "mdi-vuetify",
+          "text": "Vuetify",
+          "color": "blue-darken-1"
+        },
+        {
+          "id": 6,
+          "icon": "mdi-sass",
+          "text": "Scss",
+          "color": "purple-lighten-3"
+        },
+        {
+          "id": 7,
+          "text": "Vite",
+          "color": "deep-purple-lighten-2"
+        }
+      ]
+    }
+  ]
+}

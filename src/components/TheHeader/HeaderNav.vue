@@ -1,8 +1,8 @@
 <template>
   <nav v-if="!isList">
     <v-btn
-      v-for="(btn, index) in navItems"
-      :key="btn.title + index"
+      v-for="btn in navItems"
+      :key="btn.id"
       :to="btn.link"
       class="mx-2"
       variant="text"
@@ -38,10 +38,12 @@ withDefaults(defineProps<Props>(), {
 
 const navItems: ILink[] = [
   {
+    id: 1,
     title: 'Обо мне',
     link: '/about'
   },
   {
+    id: 2,
     title: 'Проекты',
     link: '/projects'
   }

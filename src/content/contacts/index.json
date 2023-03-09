@@ -1,6 +1,7 @@
 {
   "contacts": [
     {
+      "id": 1,
       "title": "Telegram",
       "href": "https://t.me/aanar1k",
       "icon": "$telegram",
@@ -8,6 +9,7 @@
     },
 
     {
+      "id": 2,
       "title": "GitHub",
       "href": "https://github.com/Anarik39",
       "icon": "mdi-github",
@@ -15,6 +17,7 @@
     },
 
     {
+      "id": 3,
       "title": "E-mail",
       "href": "mailto:aanar1k14@gmail.com",
       "icon": "mdi-mail",
