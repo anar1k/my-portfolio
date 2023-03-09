@@ -2,35 +2,22 @@
   <div>
     <ui-breadcrumbs :items="itemsForBreadcrumbs" />
 
-    <div class="text-h4 text-md-h3 my-4">
+    <div class="text-h4 text-md-h3 my-4 text-amber">
       Мои проекты
     </div>
 
     <v-row>
       <v-col
-        v-for="(n, i) in 3"
-        :key="i"
+        v-for="item in cardItems"
+        :key="item.id"
         cols="12"
         sm="6"
         md="4"
       >
-        <v-card :to="`/project/${i + 1}`">
-          <v-img
-            height="200"
-            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-            cover
-          />
-
-          <v-card-subtitle class="pt-4">
-            Number 10
-          </v-card-subtitle>
-
-          <v-card-text>
-            <div>Whitehaven Beach</div>
-
-            <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text>
-        </v-card>
+        <projects-card
+          :card-item="item"
+          class="h-100"
+        />
       </v-col>
     </v-row>
   </div>
@@ -38,6 +25,8 @@
 
 <script setup lang="ts">
 import UiBreadcrumbs from '~/components/Ui/UiBreadcrumbs.vue';
+import ProjectsCard from '~/components/Projects/ProjectsCard.vue';
+import { useProjectsStore } from '~/stores/projects';
 
 useHead({ title: 'Мои проекты' });
 
@@ -50,4 +39,10 @@ const itemsForBreadcrumbs = [
     title: 'проекты'
   }
 ];
+
+const { fetchProjects } = useProjectsStore();
+
+await fetchProjects();
+
+const cardItems = computed(() => useProjectsStore().projects);
 </script>

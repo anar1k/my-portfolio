@@ -11,42 +11,42 @@
       "text": "Прохожу курсы английского языка (очно)",
       "icon": "mdi-translate",
       "colorForIcon": "orange",
-       "id": 2
+      "id": 2
     },
 
     {
       "text": "Открыт к диалогу, умею работать в команде",
       "icon": "mdi-handshake",
       "colorForIcon": "red",
-       "id": 3
+      "id": 3
     },
 
     {
       "text": "Работоспособный, ответственный, целеустремленный, дотошный в работе (люблю все доводить до идеала)",
       "icon": "mdi-account-details",
       "colorForIcon": "cyan",
-       "id": 4
+      "id": 4
     },
 
     {
       "text": "С самого начала пишу проекты на фреймворке Vue.js",
       "icon": "mdi-vuejs",
       "colorForIcon": "green",
-       "id": 5
+      "id": 5
     },
 
     {
       "text": "Опыт разработки приложений Vue с нуля (SSR, SPA)",
       "icon": "mdi-lightbulb-on-10",
       "colorForIcon": "yellow",
-       "id": 6
+      "id": 6
     },
 
     {
       "text": "Не люблю проекты с JQuery и React",
       "icon": ["mdi-jquery", "mdi-react"],
       "colorForIcon": "blue",
-       "id": 7
+      "id": 7
     }
   ]
 }

@@ -20,7 +20,7 @@
       cols="12"
       md="8"
     >
-      <div class="text-h4 text-md-h3 mb-4">
+      <div class="text-h4 text-md-h3 mb-4 text-amber">
         Добро пожаловать!
       </div>
 
@@ -39,12 +39,12 @@
           xl="4"
         >
           <v-btn
-            class="mt-4 w-100"
-            prepend-icon="mdi-download"
-            href="/files/resume.pdf"
-            download
+            class="mt-4"
+            prepend-icon="mdi-robot-happy-outline"
+            to="/projects"
+            block
           >
-            Скачать резюме
+            Посмотреть проекты
           </v-btn>
         </v-col>
       </v-row>
