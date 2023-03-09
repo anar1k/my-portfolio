@@ -31,7 +31,7 @@
           />
         </template>
 
-        <button-toggle-theme />
+        <ui-button-toggle-theme />
 
         <template v-if="isLoading && mobile">
           <v-divider
@@ -57,7 +57,7 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
 import HeaderNav from '~/components/TheHeader/HeaderNav.vue';
-import ButtonToggleTheme from '~/components/Ui/ButtonToggleTheme.vue';
+import UiButtonToggleTheme from '~/components/Ui/UiButtonToggleTheme.vue';
 
 const emit = defineEmits<{(e: 'open-drawer'): void}>();
 

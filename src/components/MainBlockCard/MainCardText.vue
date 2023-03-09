@@ -2,8 +2,8 @@
   <v-card-text class="mt-2 text-amber flex-grow-0">
     <div>
       <v-btn
-        v-for="(item, index) in skills"
-        :key="item + index"
+        v-for="item in skills"
+        :key="item.id"
         variant="text"
         density="compact"
         icon
@@ -40,8 +40,8 @@
 
       <v-list>
         <v-tooltip
-          v-for="(item, index) in contactsItems"
-          :key="index"
+          v-for="item in contactsItems"
+          :key="item.id"
           :text="item.textForTooltip"
           close-on-content-click
         >
