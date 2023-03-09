@@ -1,22 +1,23 @@
 <template>
   <v-app class="error-page">
-    <v-main class="error-page__content d-flex flex-column align-center bg-black">
+    <v-main class="error-page__content d-flex flex-column align-center bg-black pa-10">
       <svg-rocket-with-stars />
 
-      <div class="error-page__text text-center">
-        <div class="text-h4 font-weight-bold">
+      <div class="error-page__text text-center mt-8 text-h5 text-md-h4">
+        <div class="font-weight-bold">
           {{ error.statusCode }} Ошибка
         </div>
 
-        <div class="text-h4">
+        <div>
           Ты потерялся в пространстве :(
         </div>
 
         <v-btn
           class="mt-4"
+          append-icon="mdi-rocket-launch"
           @click="handleError"
         >
-          Давай отвезем тебя обратно
+          Давай отвезём тебя обратно
         </v-btn>
       </div>
     </v-main>
