@@ -4,6 +4,7 @@
     class="project-card"
   >
     <nuxt-img
+      alt="photo"
       class="project-card__img w-100"
       height="200"
       :src="cardItem.img"
