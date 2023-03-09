@@ -8,7 +8,8 @@
         density="compact"
         icon
         :ripple="false"
-        class="justify-start"
+        class="mr-2"
+        :aria-label="item.text"
       >
         <v-icon :color="item.color">
           {{ item.icon }}

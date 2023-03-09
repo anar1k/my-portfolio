@@ -1,6 +1,7 @@
 <template>
   <v-btn
     variant="text"
+    aria-label="toggle theme"
     :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
     @click="setTheme()"
   />

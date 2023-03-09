@@ -9,9 +9,10 @@
       md="4"
     >
       <nuxt-img
+        alt="groot"
         class="w-100"
         quality="80"
-        src="/img/groot.png"
+        src="/img/groot.webp"
       />
     </v-col>
 
