@@ -6,7 +6,7 @@
   >
     <div class="d-flex flex-column flex-md-row">
       <div class="py-md-4">
-        <v-card-title class="text-h5 text-md-h3 mt-md-4 text-amber">
+        <v-card-title class="text-h5 text-md-h3 mt-md-4">
           Frontend-разработчик
         </v-card-title>
 

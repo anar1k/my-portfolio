@@ -40,8 +40,8 @@
       >
         <v-btn
           v-if="projectItem.link"
-          variant="tonal"
           block
+          append-icon="mdi-transfer-right"
           class="mb-4"
           :href="projectItem.link"
           target="_blank"
