@@ -7,8 +7,9 @@
             variant="text"
             to="/"
           >
-            <v-img
-              src="/img/logo.png"
+            <nuxt-img
+              preload
+              src="/img/logo.webp"
               width="30px"
               class="mr-2"
             />

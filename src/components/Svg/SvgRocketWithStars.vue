@@ -459,11 +459,6 @@
 <style scoped lang="scss">
 $duration: 1.6s;
 
-.rocket-animation {
-  width: clamp(300px , 70% , 600px);
-  height: 500px;
-}
-
 .rocket-animation__stars {
   animation: twinkling linear;
   animation-duration: $duration;

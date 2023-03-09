@@ -6,6 +6,7 @@
         :key="btn.id"
         :href="btn.href"
         class="mx-4"
+        :aria-label="btn.title"
         :icon="btn.icon"
         target="_blank"
         variant="text"

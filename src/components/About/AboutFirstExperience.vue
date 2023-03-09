@@ -20,9 +20,10 @@
       md="4"
     >
       <nuxt-img
+        alt="thor"
         class="rounded-lg w-100"
         quality="80"
-        src="/img/thor.jpg"
+        src="/img/thor.webp"
       />
     </v-col>
   </v-row>

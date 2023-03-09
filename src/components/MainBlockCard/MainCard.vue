@@ -32,9 +32,10 @@
       </div>
 
       <nuxt-img
+        alt="avatar"
         preload
         quality="100"
-        src="/img/avatar.jpg"
+        src="/img/avatar.webp"
         class="my-3 my-md-0 ml-md-10 order-first order-md-0 align-self-center"
         width="250px"
       />
