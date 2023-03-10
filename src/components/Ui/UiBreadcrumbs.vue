@@ -14,14 +14,14 @@
 </template>
 
 <script setup lang="ts">
-interface Props {
+interface IProps {
   items?: {
     title: string,
     to?: string
   }[],
 }
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<IProps>(), {
   items: () => []
 });
 

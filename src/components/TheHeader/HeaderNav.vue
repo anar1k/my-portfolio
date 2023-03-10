@@ -28,11 +28,11 @@
 <script setup lang="ts">
 import { ILink } from '~/types/Link';
 
-interface Props {
+interface IProps {
   isList?: boolean,
 }
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<IProps>(), {
   isList: false
 });
 

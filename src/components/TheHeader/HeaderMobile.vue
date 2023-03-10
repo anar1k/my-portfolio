@@ -14,11 +14,11 @@
 import { useDisplay } from 'vuetify';
 import HeaderNav from '~/components/TheHeader/HeaderNav.vue';
 
-interface Props {
+interface IProps {
   modelValue: boolean,
 }
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<IProps>(), {
   modelValue: false
 });
 

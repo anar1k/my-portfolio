@@ -13,17 +13,18 @@
 import { useProjectsStore } from '~/stores/projects';
 import UiBreadcrumbs from '~/components/Ui/UiBreadcrumbs.vue';
 import ProjectCard from '~/components/Project/ProjectCard.vue';
+import { IProject } from '~/types/Project';
 
-interface RouteParams {
+interface IRouteParams {
   id?: string;
 }
 
-const { id }: RouteParams = useRoute().params;
+const { id }: IRouteParams = useRoute().params;
 const { fetchProjects, getProject } = useProjectsStore();
 
 await fetchProjects();
 
-const project = getProject(id);
+const project: IProject | undefined = getProject(id);
 
 if (!project) {
   throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true });
