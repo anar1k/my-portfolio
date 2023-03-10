@@ -2,7 +2,7 @@ import { defineStore, acceptHMRUpdate } from 'pinia';
 import { ParsedContent } from '@nuxt/content/dist/runtime/types';
 import { IProject } from '~/types/Project';
 
-interface DataFetch extends ParsedContent {
+interface IDataFetch extends ParsedContent {
   projects: IProject[]
 }
 
@@ -11,7 +11,7 @@ export const useProjectsStore = defineStore('projects', () => {
 
   const fetchProjects = async () => {
     const { data } = await useAsyncData('projects',
-      () => queryContent<DataFetch>('projects').only('projects').findOne()
+      () => queryContent<IDataFetch>('projects').only('projects').findOne()
     );
 
     projects.value = data.value?.projects || [];

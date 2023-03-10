@@ -63,11 +63,11 @@
 <script setup lang="ts">
 import { IProject } from '~/types/Project';
 
-interface Props {
+interface IProps {
   projectItem?: IProject
 }
 
-defineProps<Props>();
+defineProps<IProps>();
 </script>
 
 <style scoped lang="scss">

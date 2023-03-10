@@ -2,7 +2,7 @@ import { defineStore, acceptHMRUpdate } from 'pinia';
 import { ParsedContent } from '@nuxt/content/dist/runtime/types';
 import { IContact } from '~/types/Contact';
 
-interface DataFetch extends ParsedContent {
+interface IDataFetch extends ParsedContent {
   contacts: IContact[]
 }
 
@@ -11,7 +11,7 @@ export const useContactsStore = defineStore('contacts', () => {
 
   const fetchContacts = async () => {
     const { data } = await useAsyncData('contacts',
-      () => queryContent<DataFetch>('contacts').only('contacts').findOne()
+      () => queryContent<IDataFetch>('contacts').only('contacts').findOne()
     );
 
     contacts.value = data.value?.contacts || [];

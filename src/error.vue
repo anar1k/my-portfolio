@@ -28,11 +28,11 @@
 import { NuxtError } from '#app';
 import SvgRocketWithStars from '~/components/Svg/SvgRocketWithStars.vue';
 
-interface Props {
+interface IProps {
   error: Partial<NuxtError>,
 }
 
-defineProps<Props>();
+defineProps<IProps>();
 
 const handleError = () => clearError({ redirect: '/' });
 </script>

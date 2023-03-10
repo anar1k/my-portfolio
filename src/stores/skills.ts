@@ -2,7 +2,7 @@ import { defineStore, acceptHMRUpdate } from 'pinia';
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
 import { ISkill } from '~/types/Skill';
 
-interface DataFetch extends ParsedContent {
+interface IDataFetch extends ParsedContent {
   skills: ISkill[]
 }
 
@@ -13,7 +13,7 @@ export const useSkillsStore = defineStore('skills', () => {
 
   const fetchSkills = async () => {
     const { data } = await useAsyncData('skills',
-      () => queryContent<DataFetch>('skills').only('skills').findOne()
+      () => queryContent<IDataFetch>('skills').only('skills').findOne()
     );
 
     allSkills.value = data.value?.skills || [];

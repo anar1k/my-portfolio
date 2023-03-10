@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },
 
     head: {
-      title: 'AAnarik Dev',
+      title: 'aanar1k',
 
       meta: [
         { name: 'description', content: 'Все о Frontend-разработчике Анарике' }

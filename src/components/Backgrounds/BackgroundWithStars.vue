@@ -12,12 +12,12 @@
 </template>
 
 <script lang="ts" setup>
-interface Props {
+interface IProps {
   fixedBackground?: boolean,
   showWives?: boolean
 }
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<IProps>(), {
   fixedBackground: true,
   showWives: true
 });
