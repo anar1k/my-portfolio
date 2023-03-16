@@ -1,10 +1,21 @@
 import { describe, expect, it } from 'vitest';
-import { $fetch } from '@nuxt/test-utils';
+import { mount } from '@vue/test-utils';
+import ProjectCard from './ProjectCard.vue';
+import { IProject } from '~/types/Project';
 
-describe('ProjectCard', () => {
-  it('Renders index page', async () => {
-    const html = await $fetch('/');
+describe('ProjectCard tests', () => {
+  it('Renders ProjectCard component', async () => {
+    const propsData: IProject = {
+      id: 1,
+      img: '/img/test-img.webp',
+      title: 'test',
+      shortlyText: 'test'
+    };
 
-    expect(html).not.toBeNull();
+    const wrapper = await mount(ProjectCard, {
+      props: propsData
+    });
+    console.log(wrapper.find('div').text());
+    expect(wrapper.find('div').text()).toBe(`Проект «${propsData.title}»`);
   });
 });
