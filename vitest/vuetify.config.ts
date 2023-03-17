@@ -1,1 +1,2 @@
-global.CSS.supports = () => false;
+// @ts-ignore
+global.CSS = { supports: () => false };
