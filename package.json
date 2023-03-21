@@ -24,7 +24,6 @@
     "@mdi/font": "^7.1.96",
     "@nuxt/content": "^2.4.3",
     "@pinia/nuxt": "^0.4.6",
-    "happy-dom": "^8.9.0",
     "jsdom": "^21.1.1",
     "pinia": "^2.0.30",
     "pinia-plugin-persistedstate": "^3.0.2",

@@ -20,6 +20,7 @@ export default defineConfig({
       inline: ['vuetify']
     },
 
-    globals: true
+    globals: true,
+    globalSetup: './vitest/setup.ts'
   }
 });
