@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 import UiBreadcrumbs from '~/components/Ui/UiBreadcrumbs.vue';
-import ProjectsCard from '~/components/Projects/ProjectsCard.vue';
+import ProjectsCard from '~/components/Projects/ProjectsCard/ProjectsCard.vue';
 import { useProjectsStore } from '~/stores/projects';
 
 useHead({ title: 'Мои проекты' });
