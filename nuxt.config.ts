@@ -84,5 +84,9 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'netlify'
+  },
+
+  devtools: {
+    enabled: true
   }
 });
