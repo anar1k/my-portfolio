@@ -11,7 +11,7 @@
         </v-card-title>
 
         <v-card-subtitle class="text-caption text-md-subtitle-1">
-          AAnarik (Гений, миллиардер, плейбой, филантроп)
+          Тот самый anar1k
         </v-card-subtitle>
 
         <main-card-text />

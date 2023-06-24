@@ -1,11 +1,8 @@
 import eslintPlugin from 'vite-plugin-eslint';
 import vuetify from 'vite-plugin-vuetify';
+import { InlineConfig } from 'vite';
 
 export default defineNuxtConfig({
-  typescript: {
-    strict: true
-  },
-
   app: {
     pageTransition: {
       name: 'page',
@@ -47,6 +44,12 @@ export default defineNuxtConfig({
     '@/assets/styles/app.scss'
   ],
 
+  typescript: {
+    strict: true
+  },
+
+  test: true,
+
   vite: {
     plugins: [
       eslintPlugin()
@@ -56,7 +59,7 @@ export default defineNuxtConfig({
   },
 
   hooks: {
-    'vite:extendConfig': (config) => {
+    'vite:extendConfig': (config: InlineConfig) => {
       config.plugins!.push(
         vuetify()
       );
@@ -81,5 +84,9 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'netlify'
+  },
+
+  devtools: {
+    enabled: true
   }
 });

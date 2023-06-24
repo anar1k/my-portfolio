@@ -1,21 +1,21 @@
 <template>
   <div class="project text-center">
     <div
-      v-if="projectItem.title"
+      v-if="projectItem?.title"
       class="text-h4 text-md-h3 mb-4 text-primary"
     >
       Проект «{{ projectItem.title }}»
     </div>
 
     <div
-      v-if="projectItem.shortlyText"
+      v-if="projectItem?.shortlyText"
       class="text-subtitle-1 mb-2"
     >
       {{ projectItem.shortlyText }}
     </div>
 
     <div
-      v-if="projectItem.skills?.length"
+      v-if="projectItem?.skills?.length"
       class="mb-2"
     >
       <v-chip
@@ -30,7 +30,7 @@
     </div>
 
     <v-row
-      v-if="projectItem.link || projectItem.img"
+      v-if="projectItem?.link || projectItem?.img"
       justify="center"
     >
       <v-col
@@ -39,7 +39,7 @@
         md="6"
       >
         <v-btn
-          v-if="projectItem.link"
+          v-if="projectItem?.link"
           block
           append-icon="mdi-transfer-right"
           class="mb-4"
@@ -50,7 +50,7 @@
         </v-btn>
 
         <nuxt-img
-          v-if="projectItem.img"
+          v-if="projectItem?.img"
           class="project__img rounded w-100"
           :src="projectItem.img"
           alt="photo"
