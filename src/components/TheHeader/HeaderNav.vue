@@ -14,7 +14,7 @@
   <v-list
     v-else
     nav
-    active-color="primary"
+    color="primary"
   >
     <v-list-item
       v-for="(item, index) in navItems"
