@@ -9,24 +9,6 @@
     <v-divider />
 
     <about-hobby-information class="mt-4" />
-
-    <v-row justify="center">
-      <v-col
-        cols="12"
-        xl="4"
-        md="6"
-      >
-        <v-btn
-          size="large"
-          block
-          prepend-icon="mdi-download"
-          href="/files/resume.pdf"
-          download
-        >
-          Скачать резюме
-        </v-btn>
-      </v-col>
-    </v-row>
   </div>
 </template>
 

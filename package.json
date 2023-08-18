@@ -11,28 +11,28 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.2.96",
-    "@nuxt/devtools": "^0.6.3",
+    "@nuxt/content": "^2.7.2",
+    "@nuxt/devtools": "^0.6.7",
     "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
-    "@types/node": "^18",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "@vue/test-utils": "^2.4.0",
-    "eslint": "^8.43.0",
-    "nuxt": "^3.6.0",
-    "typescript": "latest",
+    "@types/node": "^18.17.5",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/test-utils": "^2.4.1",
+    "eslint": "^8.47.0",
+    "jsdom": "^21.1.2",
+    "nuxt": "^3.6.5",
+    "sass": "^1.66.0",
+    "typescript": "^5.1.6",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-vuetify": "^1.0.2",
-    "sass": "^1.63.6",
-    "jsdom": "^21.1.2",
-    "@nuxt/content": "^2.7.0",
     "vitest": "^0.29.8"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.4",
-    "pinia-plugin-persistedstate": "^3.1.0",
-    "vuetify": "^3.3.5"
+    "pinia": "^2.1.6",
+    "pinia-plugin-persistedstate": "^3.2.0",
+    "vuetify": "^3.3.13"
   },
   "overrides": {
     "vue": "latest"
