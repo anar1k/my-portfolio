@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# My portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+SSR application of my portfolio
+
+Stack: Vue 3, Nuxt 3, Pinia, Vuetify, TS
 
 ## Setup
 
