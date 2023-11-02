@@ -13,7 +13,7 @@
 import { useProjectsStore } from '~/stores/projects';
 import UiBreadcrumbs from '~/components/Ui/UiBreadcrumbs.vue';
 import ProjectCard from '~/components/Project/ProjectCard/ProjectCard.vue';
-import { IProject } from '~/types/Project';
+import type { IProject } from '~/types/Project';
 
 interface IRouteParams {
   id?: string;

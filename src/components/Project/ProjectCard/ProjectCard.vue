@@ -61,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import { IProject } from '~/types/Project';
+import type { IProject } from '~/types/Project';
 
 interface IProps {
   projectItem?: IProject

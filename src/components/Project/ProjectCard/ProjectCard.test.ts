@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { createVuetify } from 'vuetify';
 import { mount } from '@vue/test-utils';
 import ProjectCard from './ProjectCard.vue';
-import { IProject } from '~/types/Project';
+import type { IProject } from '~/types/Project';
 
 const projectItem: IProject = {
   id: 1,

@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { NuxtError } from '#app';
+import type { NuxtError } from '#app';
 import SvgRocketWithStars from '~/components/Svg/SvgRocketWithStars.vue';
 
 interface IProps {

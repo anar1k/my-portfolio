@@ -7,7 +7,7 @@ export const useThemeStore = defineStore('theme', () => {
 
   const theme = ref<string>('');
 
-  const setTheme = (payload:string) => {
+  const setTheme = (payload?: string) => {
     let currentTheme: string;
 
     if (!payload) {
