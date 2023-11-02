@@ -29,6 +29,8 @@
     "vitest": "^0.29.8"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
     "vuetify": "^3.3.23"
   },
   "overrides": {
