@@ -1,6 +1,6 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { ParsedContent } from '@nuxt/content/dist/runtime/types';
-import { IInfoAboutYourSelf } from '~/types/InfoAboutYourSelf';
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
+import type { IInfoAboutYourSelf } from '~/types/InfoAboutYourSelf';
 
 interface IDataFetch extends ParsedContent {
     infoAboutYourSelf: IInfoAboutYourSelf[]

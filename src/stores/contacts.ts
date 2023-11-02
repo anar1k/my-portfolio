@@ -1,6 +1,6 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { ParsedContent } from '@nuxt/content/dist/runtime/types';
-import { IContact } from '~/types/Contact';
+import type{ ParsedContent } from '@nuxt/content/dist/runtime/types';
+import type { IContact } from '~/types/Contact';
 
 interface IDataFetch extends ParsedContent {
   contacts: IContact[]

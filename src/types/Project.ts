@@ -1,4 +1,4 @@
-import { ISkill } from '~/types/Skill';
+import type { ISkill } from '~/types/Skill';
 
 export interface IProject {
     id: number,

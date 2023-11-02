@@ -1,6 +1,6 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
-import { ParsedContent } from '@nuxt/content/dist/runtime/types';
-import { IProject } from '~/types/Project';
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
+import type { IProject } from '~/types/Project';
 
 interface IDataFetch extends ParsedContent {
   projects: IProject[]

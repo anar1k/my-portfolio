@@ -1,6 +1,6 @@
 import eslintPlugin from 'vite-plugin-eslint';
 import vuetify from 'vite-plugin-vuetify';
-import { InlineConfig } from 'vite';
+import type { InlineConfig } from 'vite';
 
 export default defineNuxtConfig({
   app: {
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 
   css: [
     'vuetify/styles',
-    '@/assets/styles/app.scss'
+    '@/assets/styles/index.scss'
   ],
 
   typescript: {
@@ -66,10 +66,9 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxt/image-edge',
     '@nuxt/content',
+    '@nuxt/image',
     '@pinia-plugin-persistedstate/nuxt',
-
     [
       '@pinia/nuxt',
       {

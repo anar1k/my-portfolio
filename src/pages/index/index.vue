@@ -13,7 +13,7 @@ import { useSkillsStore } from '~/stores/skills';
 import { useContactsStore } from '~/stores/contacts';
 
 definePageMeta({
-  layout: 'index'
+  layout: 'custom'
 });
 
 useHead({ title: 'Главная' });

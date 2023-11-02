@@ -1,6 +1,6 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
-import { ISkill } from '~/types/Skill';
+import type { ISkill } from '~/types/Skill';
 
 interface IDataFetch extends ParsedContent {
   skills: ISkill[]
