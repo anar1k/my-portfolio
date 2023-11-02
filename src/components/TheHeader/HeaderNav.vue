@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { ILink } from '~/types/Link';
+import type { ILink } from '~/types/Link';
 
 interface IProps {
   isList?: boolean,
