@@ -1,4 +1,4 @@
-# My portfolio (unfinished, old)
+# My portfolio (old)
 
 SSR application of my portfolio
 
